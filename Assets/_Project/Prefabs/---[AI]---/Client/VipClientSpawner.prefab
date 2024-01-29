@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6678288494577550494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3155940198499490636}
+  - component: {fileID: 1374388155459261238}
+  - component: {fileID: 5445438501607679467}
+  - component: {fileID: 5125009827751911720}
+  m_Layer: 0
+  m_Name: VipClientSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3155940198499490636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6678288494577550494}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 40, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1374388155459261238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6678288494577550494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb201fcbf9026a49985e9aa3b92d9bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExitPos: {fileID: 0}
+  IdlePos: {fileID: 0}
+  MaxClientNumber: 2
+  SpawnCooldown: 10
+  SitPoints: []
+  ClientColl: []
+  _clients:
+  - {fileID: 8569743921165638241, guid: 4739905cbbf3e4f44ac4ad2857a041d7, type: 3}
+  - {fileID: 8569743921165638241, guid: d064a121f6a6c724190f3958cd719750, type: 3}
+--- !u!114 &5445438501607679467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6678288494577550494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c60a2bf5f7e76498c264459b1e606e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LvlScale: 
+  MaxClientNumber: 
+--- !u!114 &5125009827751911720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6678288494577550494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f0ffacb42991a45b63df0fa1458a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clientSpawnerSO: {fileID: 11400000, guid: c403a04bcc537024db5abcbde10830a6, type: 2}
