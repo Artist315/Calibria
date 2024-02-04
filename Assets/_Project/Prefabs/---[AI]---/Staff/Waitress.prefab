@@ -51,7 +51,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6638362848975590701
 Transform:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IdlePos: {fileID: 0}
-  SinkPos: {fileID: 0}
+  DumpPos: {fileID: 0}
   OrdinaryClientSpawner: {fileID: 0}
   VipClientSpawner: {fileID: 0}
   OrdersToTake: 01000000
@@ -90,10 +90,12 @@ MonoBehaviour:
   AllClientsColl: []
   CurrentOrder: 0
   Agent: {fileID: 0}
+  SinkPos: {fileID: 0}
   PastaSpawnerPos: {fileID: 0}
   PickupAction: {fileID: 0}
   SitPoints: []
   GarbageTarget: {fileID: 0}
+  _upgradeUI: {fileID: 0}
 --- !u!114 &8567431535371141689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,12 +109,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PickupTargetPos: {fileID: 2933005542682488710}
-  PickupGrabTimer: 0.5
   TakablePickups: 0100000003000000
-  _kegPickupTargetPos: {fileID: 0}
+  _audioManager: {fileID: 0}
+  PickupGrabTimer: 0.5
   PickupFollowTarget: {fileID: 7732092612516161225}
   CurrentPickup: 0
   PickedUp: 0
+  CurrentGarbageNumber: 0
+  MaxGarbageNumber: 0
+  _kegPickupTargetPos: {fileID: 0}
 --- !u!114 &7204613520200555932
 MonoBehaviour:
   m_ObjectHideFlags: 0

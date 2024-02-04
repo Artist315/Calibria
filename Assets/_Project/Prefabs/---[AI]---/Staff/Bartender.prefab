@@ -83,7 +83,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8583251907562301485
 Transform:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IdlePos: {fileID: 0}
-  SinkPos: {fileID: 0}
+  DumpPos: {fileID: 0}
   OrdinaryClientSpawner: {fileID: 0}
   VipClientSpawner: {fileID: 0}
   OrdersToTake: 0000000002000000
@@ -126,7 +126,7 @@ MonoBehaviour:
   BeerSpawnerPos: {fileID: 0}
   WhiskeySpawnerPos: {fileID: 0}
   KegSpawnPos: {fileID: 0}
-  BeerPickupSpawner: {fileID: 0}
+  AlcoholPickupSpawner: {fileID: 0}
   PickupAction: {fileID: 0}
 --- !u!114 &1138902583747352003
 MonoBehaviour:
@@ -141,12 +141,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PickupTargetPos: {fileID: 2786739218811526333}
-  PickupGrabTimer: 0.5
   TakablePickups: 000000000200000004000000
-  _kegPickupTargetPos: {fileID: 4748011589092079177}
+  _audioManager: {fileID: 0}
+  PickupGrabTimer: 0.5
   PickupFollowTarget: {fileID: 6189354317236679188}
   CurrentPickup: 0
   PickedUp: 0
+  CurrentGarbageNumber: 0
+  MaxGarbageNumber: 0
+  _kegPickupTargetPos: {fileID: 4748011589092079177}
 --- !u!114 &7668339565428425691
 MonoBehaviour:
   m_ObjectHideFlags: 0

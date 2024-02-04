@@ -7,6 +7,7 @@ public class EventsManager : MonoBehaviour
 {
 
     public delegate void GameStateEvent();
+    public delegate void UIEvent();
     private void Awake()
     {
         //OnGameStarted   = new UnityEvent();
@@ -20,4 +21,8 @@ public class EventsManager : MonoBehaviour
     public static GameStateEvent OnGameStarted;
     public static GameStateEvent OnGamePaused;
     public static GameStateEvent OnGameContinued;
+
+    public static UIEvent OnUpgradeOpened;
+    public static UIEvent OnUpgradeClosed;
+    public static UIEvent OnCustomizationUpgraded;
 }

@@ -19,6 +19,8 @@ public class UpgradeAction : MonoBehaviour
     
     private float _triggerStayTimer = 0;
 
+    private bool _isUpgradeOpened = false;
+
     private void Awake()
     {
         if (_audioManager == null)
@@ -31,16 +33,17 @@ public class UpgradeAction : MonoBehaviour
     {
         if (_isClosedForCutscene) return;
         
-        if (other.CompareTag(TagConstants.Player) && !_upgradeUI.UpgradeElements.activeSelf)
+        if (other.CompareTag(TagConstants.Player) && !_isUpgradeOpened)
         {
             _triggerStayTimer += Time.deltaTime;
             
             if (_triggerStayTimer >= _actionDelay && !PlayerInTrigger)
             {
+                Debug.Log("Upgrade Ui open action called");
+                _isUpgradeOpened = true;
                 _audioManager.PlayAudio(_openAudioClip);
                 PlayerInTrigger = true;
                 _triggerStayTimer = 0;
-
 
                 _upgradeUI.Open();
             }
@@ -49,7 +52,7 @@ public class UpgradeAction : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag(TagConstants.Player) && _upgradeUI.UpgradeElements.activeSelf)
+        if (other.CompareTag(TagConstants.Player) && _isUpgradeOpened)
         {
             CloseUpgradeUI(false);
         }
@@ -65,6 +68,8 @@ public class UpgradeAction : MonoBehaviour
     
     public void CloseUpgradeUI(bool flag)
     {
+        Debug.Log("Upgrade Ui close action called");
+        _isUpgradeOpened = false;
         _triggerStayTimer = 0;
         _audioManager.Stop();
         _audioManager.PlayAudio(_closeAudioClip);
@@ -73,4 +78,6 @@ public class UpgradeAction : MonoBehaviour
         
         _isClosedForCutscene = flag;
     }
+
+
 }

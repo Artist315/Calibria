@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,6 +38,7 @@ public class UpgradeUI : MonoBehaviour
     private Animator _anim;
 
     private int _animIDFadeIn, _animIDFadeOut;
+    public bool IsAnimated = false;
 
     private void Start()
     {
@@ -61,6 +64,7 @@ public class UpgradeUI : MonoBehaviour
 
         BartenderLvlRequirement.text = BartenderUpgrade.LvlRequirement.ToString();
         BartenderMoneyCost.text = BartenderUpgrade.MoneyCost.ToString();
+
     }
 
     private void Update()
@@ -73,12 +77,18 @@ public class UpgradeUI : MonoBehaviour
 
     public void Close()
     {
+        Debug.Log("Upgrade Ui closed");
+
         UpgradeView.Priority = -1;
         _anim.SetTrigger(_animIDFadeOut);
+        EventsManager.OnUpgradeClosed?.Invoke();
+
     }
 
     public void Open()
     {
+        Debug.Log("Upgrade Ui opened");
+
         UpgradeView.Priority = 1;
         StartCoroutine(WaitCameraBlend());
     }
@@ -92,9 +102,11 @@ public class UpgradeUI : MonoBehaviour
         {
             yield return new WaitUntil(() => currentBlend.IsComplete);
 
+            EventsManager.OnUpgradeOpened?.Invoke();
             if (_upgradeAction.PlayerInTrigger)
             {
                 _anim.SetTrigger(_animIDFadeIn);
+
             }
         }
         else
