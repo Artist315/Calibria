@@ -102,11 +102,10 @@ public class UpgradeUI : MonoBehaviour
         {
             yield return new WaitUntil(() => currentBlend.IsComplete);
 
-            EventsManager.OnUpgradeOpened?.Invoke();
             if (_upgradeAction.PlayerInTrigger)
             {
+                EventsManager.OnUpgradeOpened?.Invoke();
                 _anim.SetTrigger(_animIDFadeIn);
-
             }
         }
         else

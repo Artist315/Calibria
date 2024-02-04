@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45328eaa8d0b91d4a96fbf2ff491d38e, type: 3}
   m_Name: VIPZoneUpgradeNew
   m_EditorClassIdentifier: 
-  MoneyCost: 0
-  LevelRequirement: 0
+  MoneyCost: 150
+  LevelRequirement: 5
   ObjectModels:
   - {fileID: 5091591690788397887, guid: 6657915d64a817148a93dd9349be9f9d, type: 3}
   - {fileID: 6678288494577550494, guid: 4250940749ed6f54c856ead4f0062803, type: 3}

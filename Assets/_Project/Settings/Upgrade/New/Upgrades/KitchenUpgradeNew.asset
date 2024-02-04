@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45328eaa8d0b91d4a96fbf2ff491d38e, type: 3}
-  m_Name: BartenderUpgradeNew
+  m_Name: KitchenUpgradeNew
   m_EditorClassIdentifier: 
-  MoneyCost: 0
-  LevelRequirement: 0
+  MoneyCost: 60
+  LevelRequirement: 3
   ObjectModels:
-  - {fileID: 859911199348858815, guid: 29394ea62f71ef94881c5fdcdba47c49, type: 3}
-  ObjectName: BartenderUpgrade
+  - {fileID: 5984719243681688063, guid: 608dcf1aac8d74c458fb0f47f20db70f, type: 3}
+  ObjectName: KitchenUpgrade

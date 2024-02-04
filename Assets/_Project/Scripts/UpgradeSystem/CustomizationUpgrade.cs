@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,14 +19,12 @@ public class CustomizationUpgrade : MonoBehaviour
 
     [SerializeField]
     private List<GameObject> ObjectModels;
+    private UpgradePage upgradePage;
     private void Start()
     {
         Button = GetComponentInChildren<Button>();
-        MoneyCost.text = CustomizationUpgradeSettings.MoneyCost.ToString();
-        if (LevelRequirement != null)
-        {
-            LevelRequirement.text = CustomizationUpgradeSettings.LevelRequirement.ToString();
-        }
+        upgradePage = GetComponentInParent<UpgradePage>();
+        UpdateText();
 
         MoneyManager = MoneyManager.Instance;
         LevelManager = LevelManager.Instance;
@@ -34,11 +33,26 @@ public class CustomizationUpgrade : MonoBehaviour
         if (IsUpdated)
         {
             Unsubscribe();
-            ActivateCustomizationObject();
+            ActivateObject();
             EventsManager.OnCustomizationUpgraded?.Invoke();
             return;
         }
+        else
+        {
+
+            HideObject();
+        }
         Button.onClick.AddListener(BuyCustomization);
+    }
+
+
+    private void UpdateText()
+    {
+        MoneyCost.text = CustomizationUpgradeSettings.MoneyCost.ToString();
+        if (LevelRequirement != null)
+        {
+            LevelRequirement.text = CustomizationUpgradeSettings.LevelRequirement.ToString();
+        }
     }
 
     private void Unsubscribe()
@@ -62,8 +76,9 @@ public class CustomizationUpgrade : MonoBehaviour
         {
             Unsubscribe();
             EventsManager.OnCustomizationUpgraded?.Invoke();
+            //upgradePage.CheckIfAllUpgraded();
             UpdateButton();
-            ActivateCustomizationObject();
+            ActivateObject();
         }
     }
 
@@ -74,11 +89,18 @@ public class CustomizationUpgrade : MonoBehaviour
             Instantiate(objectModel);
         }
     }
-    private void ActivateCustomizationObject()
+    private void ActivateObject()
     {
         foreach (var objectModel in ObjectModels)
         {
             objectModel.SetActive(true);
+        }
+    }
+    private void HideObject()
+    {
+        foreach (var objectModel in ObjectModels)
+        {
+            objectModel.SetActive(false);
         }
     }
 }
