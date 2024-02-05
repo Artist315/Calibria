@@ -35,14 +35,14 @@ public class UpgradeUI : MonoBehaviour
     [HideInInspector] public BartenderUpgrade BartenderUpgrade;
 
     private CinemachineBrain _cinemachineBrain;
-    private Animator _anim;
+    //private Animator _anim;
 
     private int _animIDFadeIn, _animIDFadeOut;
     public bool IsAnimated = false;
 
     private void Start()
     {
-        _anim = GetComponent<Animator>();
+        //_anim = GetComponent<Animator>();
         _cinemachineBrain = Camera.main.GetComponent<CinemachineBrain>();
 
         VipUpgrade = GetComponent<VIPZoneUpgrade>();
@@ -80,7 +80,7 @@ public class UpgradeUI : MonoBehaviour
         Debug.Log("Upgrade Ui closed");
 
         UpgradeView.Priority = -1;
-        _anim.SetTrigger(_animIDFadeOut);
+        //_anim.SetTrigger(_animIDFadeOut);
         EventsManager.OnUpgradeClosed?.Invoke();
 
     }
@@ -105,7 +105,7 @@ public class UpgradeUI : MonoBehaviour
             if (_upgradeAction.PlayerInTrigger)
             {
                 EventsManager.OnUpgradeOpened?.Invoke();
-                _anim.SetTrigger(_animIDFadeIn);
+                //_anim.SetTrigger(_animIDFadeIn);
             }
         }
         else

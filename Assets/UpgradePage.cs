@@ -14,7 +14,7 @@ public class UpgradePage : MonoBehaviour
         AllUpgradedPage.SetActive(false);
         upgrades = GetComponentsInChildren<CustomizationUpgrade>().ToList();
         HideElements();
-        EventsManager.OnCustomizationUpgraded += CheckIfAllUpgraded;
+        //EventsManager.OnCustomizationUpgraded += CheckIfAllUpgraded;
         EventsManager.OnUpgradeClosed += HideElements;
 
     }
@@ -58,7 +58,7 @@ public class UpgradePage : MonoBehaviour
             });
             _isAllUpgraded = true;
             AllUpgradedPage.SetActive(true);
-            EventsManager.OnCustomizationUpgraded -= CheckIfAllUpgraded;
+            //EventsManager.OnCustomizationUpgraded -= CheckIfAllUpgraded;
         }
     }
 }

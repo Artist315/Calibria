@@ -75,8 +75,8 @@ public class CustomizationUpgrade : MonoBehaviour
         MoneyManager.TrySubtractResource(CustomizationUpgradeSettings.MoneyCost, out int _))
         {
             Unsubscribe();
-            EventsManager.OnCustomizationUpgraded?.Invoke();
-            //upgradePage.CheckIfAllUpgraded();
+            //EventsManager.OnCustomizationUpgraded?.Invoke();
+            upgradePage.CheckIfAllUpgraded();
             UpdateButton();
             ActivateObject();
         }

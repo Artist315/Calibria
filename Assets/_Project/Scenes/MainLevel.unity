@@ -6272,7 +6272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277333619}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
   m_LocalPosition: {x: -6, y: 23, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11926,7 +11926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371224130}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389857, z: 0.000000007694929, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389855, z: -0.000000007694927, w: 0.89442724}
   m_LocalPosition: {x: 0, y: 20, z: -28.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -21996,7 +21996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786656618970372256, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
       propertyPath: m_Name
-      value: ChristmasTreeLeft
+      value: ChristmasTreeRight
       objectReference: {fileID: 0}
     - target: {fileID: 3786656618970372256, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
       propertyPath: m_IsActive
@@ -22013,11 +22013,11 @@ PrefabInstance:
     - target: {fileID: 8531588671910440384, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
       propertyPath: ObjectModels.Array.data[1]
       value: 
-      objectReference: {fileID: 4925928771582628430}
+      objectReference: {fileID: 1654102924}
     - target: {fileID: 8531588671910440384, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
       propertyPath: CustomizationUpgradeSettings
       value: 
-      objectReference: {fileID: 11400000, guid: b25b42bd47886b546afbd5ffac16b541, type: 2}
+      objectReference: {fileID: 11400000, guid: f72e476a45836384999353c583f561dc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38712,7 +38712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293579814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
   m_LocalPosition: {x: 0, y: 20, z: -28.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38944,7 +38944,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303003317}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389857, z: 0.000000007694929, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389855, z: -0.000000007694927, w: 0.89442724}
   m_LocalPosition: {x: 13.78, y: 20.001, z: 0.39999962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -39564,7 +39564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360613427}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
   m_LocalPosition: {x: 0, y: 20, z: -28.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -45191,7 +45191,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471731733}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
   m_LocalPosition: {x: 1.5, y: 20, z: -9.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -56117,6 +56117,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d554dcb08bc56b34dae7ef7433c7978a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1654102924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3297612864510635197, guid: 50236166ef4d9f048a298128f52e8934, type: 3}
+  m_PrefabInstance: {fileID: 4925928771582628429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1693324948 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8202541653730600518, guid: 6657915d64a817148a93dd9349be9f9d, type: 3}
@@ -61511,7 +61516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750397865}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: 0.000000015389855, z: -0.000000007694927, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: -0.000000015389857, z: 0.000000007694929, w: 0.89442724}
   m_LocalPosition: {x: 3.7533512, y: 20.055744, z: 9.553453}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -62548,7 +62553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786656618970372256, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
       propertyPath: m_Name
-      value: ChristmasTreeRight
+      value: ChristmasTreeLeft
       objectReference: {fileID: 0}
     - target: {fileID: 3786656618970372256, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
       propertyPath: m_IsActive
@@ -62566,6 +62571,10 @@ PrefabInstance:
       propertyPath: ObjectModels.Array.data[1]
       value: 
       objectReference: {fileID: 4925928771582628433}
+    - target: {fileID: 8531588671910440384, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
+      propertyPath: CustomizationUpgradeSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: b25b42bd47886b546afbd5ffac16b541, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -67865,7 +67874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926662573}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
   m_LocalPosition: {x: 3.2773018, y: 21.535744, z: -20.992561}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -74331,7 +74340,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7711687332954957228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c20a7cbf56f7ff443a77309ff120dd8f, type: 2}
   m_CullingMode: 0
