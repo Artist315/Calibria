@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CustomizationUpgrade : MonoBehaviour
+public class Upgrade : MonoBehaviour
 {
     public CustomizationUpgradeSO CustomizationUpgradeSettings;
     protected MoneyManager MoneyManager;
@@ -39,7 +39,6 @@ public class CustomizationUpgrade : MonoBehaviour
         }
         else
         {
-
             HideObject();
         }
         Button.onClick.AddListener(BuyCustomization);
@@ -75,20 +74,12 @@ public class CustomizationUpgrade : MonoBehaviour
         MoneyManager.TrySubtractResource(CustomizationUpgradeSettings.MoneyCost, out int _))
         {
             Unsubscribe();
-            //EventsManager.OnCustomizationUpgraded?.Invoke();
             upgradePage.CheckIfAllUpgraded();
             UpdateButton();
             ActivateObject();
         }
     }
 
-    private void CreateCustomizationObject()
-    {
-        foreach (var objectModel in ObjectModels)
-        {
-            Instantiate(objectModel);
-        }
-    }
     private void ActivateObject()
     {
         foreach (var objectModel in ObjectModels)

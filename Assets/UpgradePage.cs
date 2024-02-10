@@ -6,13 +6,13 @@ using UnityEngine;
 public class UpgradePage : MonoBehaviour
 {
     public GameObject AllUpgradedPage;
-    private List<CustomizationUpgrade> upgrades;
+    private List<Upgrade> upgrades;
     private bool _isAllUpgraded = false;
 
     private void Start()
     {
         AllUpgradedPage.SetActive(false);
-        upgrades = GetComponentsInChildren<CustomizationUpgrade>().ToList();
+        upgrades = GetComponentsInChildren<Upgrade>().ToList();
         HideElements();
         //EventsManager.OnCustomizationUpgraded += CheckIfAllUpgraded;
         EventsManager.OnUpgradeClosed += HideElements;
