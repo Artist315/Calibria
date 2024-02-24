@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoneyCost: 10
   LevelRequirement: 0
-  ObjectModels:
-  - {fileID: 919132149155446097, guid: 0724a628feb204e4c9388b2d6bcdd6d7, type: 3}
+  ObjectModels: []
   ObjectName: Girlyandy

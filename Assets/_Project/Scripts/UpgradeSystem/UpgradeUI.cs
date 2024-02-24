@@ -53,17 +53,17 @@ public class UpgradeUI : MonoBehaviour
         _animIDFadeIn = Animator.StringToHash("FadeIn");
         _animIDFadeOut = Animator.StringToHash("FadeOut");
 
-        KitchenLvlRequirement.text = KitchenUpgrade.LvlRequirement.ToString();
-        KitchenMoneyCost.text = KitchenUpgrade.MoneyCost.ToString();
+        //KitchenLvlRequirement.text = KitchenUpgrade.LvlRequirement.ToString();
+        //KitchenMoneyCost.text = KitchenUpgrade.MoneyCost.ToString();
 
-        VipZoneLvlRequirement.text = VipUpgrade.LvlRequirement.ToString();
-        VipZoneMoneyCost.text = VipUpgrade.MoneyCost.ToString();
+        //VipZoneLvlRequirement.text = VipUpgrade.LvlRequirement.ToString();
+        //VipZoneMoneyCost.text = VipUpgrade.MoneyCost.ToString();
 
-        WaitressLvlRequirement.text = WaitressUpgrade.LvlRequirement.ToString();
-        WaitressMoneyCost.text = WaitressUpgrade.MoneyCost.ToString();
+        //WaitressLvlRequirement.text = WaitressUpgrade.LvlRequirement.ToString();
+        //WaitressMoneyCost.text = WaitressUpgrade.MoneyCost.ToString();
 
-        BartenderLvlRequirement.text = BartenderUpgrade.LvlRequirement.ToString();
-        BartenderMoneyCost.text = BartenderUpgrade.MoneyCost.ToString();
+        //BartenderLvlRequirement.text = BartenderUpgrade.LvlRequirement.ToString();
+        //BartenderMoneyCost.text = BartenderUpgrade.MoneyCost.ToString();
 
     }
 
