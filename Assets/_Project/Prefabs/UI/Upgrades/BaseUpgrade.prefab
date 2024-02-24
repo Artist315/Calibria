@@ -178,8 +178,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 0}
+  m_AnchoredPosition: {x: 0, y: -13.8}
+  m_SizeDelta: {x: 70, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &3725958173279256167
 CanvasRenderer:
@@ -253,8 +253,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5, y: 0}
-  m_SizeDelta: {x: 100, y: 0}
+  m_AnchoredPosition: {x: -41.3, y: -11.7}
+  m_SizeDelta: {x: 80, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &2935414831599497895
 CanvasRenderer:
@@ -336,7 +336,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 824, y: -132}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8810191063321643175
 CanvasRenderer:
@@ -361,6 +361,7 @@ MonoBehaviour:
   CustomizationUpgradeSettings: {fileID: 11400000, guid: f72e476a45836384999353c583f561dc, type: 2}
   MoneyCost: {fileID: 1272153994664708588}
   LevelRequirement: {fileID: 3710069011361462229}
+  ObjectModels: []
 --- !u!1 &4552497061955674188
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +398,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: -27.9}
-  m_SizeDelta: {x: 147, y: 100}
+  m_SizeDelta: {x: 120, y: 80}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &9059257779477663688
 CanvasRenderer:

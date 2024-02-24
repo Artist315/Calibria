@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5cf34e0ebe2b724b94699eb51d64188
+guid: 418a83db1a318f94cbfefebf0298e944
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: settings_with_no_background_0
+      name: MANE_MENU_AUGHTORS_02 (1)_0
       rect:
         serializedVersion: 2
-        x: 388
-        y: 658
-        width: 214
-        height: 115
+        x: 127
+        y: 755
+        width: 510
+        height: 299
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12a815ce53d03fd49af34109356d39b5
-      internalID: 1620339854
+      spriteID: 8bd3c7ed9f611da4280d7e156178f500
+      internalID: 214727413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: settings_with_no_background_1
+      name: MANE_MENU_AUGHTORS_02 (1)_1
       rect:
         serializedVersion: 2
-        x: 390
-        y: 351
-        width: 1014
-        height: 113
+        x: 658
+        y: 750
+        width: 522
+        height: 307
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bd1b36fc3e646e4e9fad51a79563f2e
-      internalID: -1015674746
+      spriteID: 9f065264d6b14304faad669a07fbe10c
+      internalID: 1935556523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: settings_with_no_background_2
+      name: MANE_MENU_AUGHTORS_02 (1)_2
       rect:
         serializedVersion: 2
-        x: 1491
+        x: 1219
+        y: 760
+        width: 492
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ed18418effd2c42ba4401138d124ac
+      internalID: 1709440325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MANE_MENU_AUGHTORS_02 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 399
+        width: 546
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6880136cec1ebbd47a019a0d60818af3
+      internalID: 302342397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MANE_MENU_AUGHTORS_02 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 393
+        width: 482
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8164bfd1734a94390a4d23058f59f7
+      internalID: -837247863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MANE_MENU_AUGHTORS_02 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 79
         y: 394
-        width: 88
-        height: 73
+        width: 428
+        height: 317
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a4c80343a3f8a247b000b5e2ac5daf1
-      internalID: 1438010327
+      spriteID: 2bb5e7487761b064d9857ad67766b456
+      internalID: 1416953091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: settings_with_no_background_3
+      name: MANE_MENU_AUGHTORS_02 (1)_6
       rect:
         serializedVersion: 2
-        x: 1669
-        y: 19
-        width: 233
-        height: 103
+        x: 179
+        y: 47
+        width: 467
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +250,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e479290204e513948b85ba149cfd57d2
-      internalID: 1478861063
+      spriteID: 40ebc36bc98346a4c847d4375403ed3d
+      internalID: 1772479089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MANE_MENU_AUGHTORS_02 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 48
+        width: 472
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3780dd1d9dd3a0439c1f941493aab93
+      internalID: 1372858980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MANE_MENU_AUGHTORS_02 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 50
+        width: 518
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1bfed11be74f04b88269963346d60e
+      internalID: 1474012671
       vertices: []
       indices: 
       edges: []
@@ -196,7 +301,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d3b92fae30a09374e9e34ea748860e52
+    spriteID: 21aa1225ce7d5b349b39055312c3867e
     internalID: 0
     vertices: []
     indices: 
@@ -204,10 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      settings_with_no_background_0: 1620339854
-      settings_with_no_background_1: -1015674746
-      settings_with_no_background_2: 1438010327
-      settings_with_no_background_3: 1478861063
+      MANE_MENU_AUGHTORS_02 (1)_0: -856581756
+      MANE_MENU_AUGHTORS_02 (1)_1: 571310356
+      MANE_MENU_AUGHTORS_02 (1)_2: -587028662
+      MANE_MENU_AUGHTORS_02 (1)_3: 1769536507
+      MANE_MENU_AUGHTORS_02 (1)_4: -1641483122
+      MANE_MENU_AUGHTORS_02 (1)_5: 1046864679
+      MANE_MENU_AUGHTORS_02 (1)_6: -936068479
+      MANE_MENU_AUGHTORS_02 (1)_7: 1523508139
+      MANE_MENU_AUGHTORS_02 (1)_8: -1766343136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
