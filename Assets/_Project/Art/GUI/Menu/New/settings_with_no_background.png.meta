@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d8efedd44352e3247a819254f7105080
+guid: f5cf34e0ebe2b724b94699eb51d64188
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MAIN_MENU_TEXT_0
+      name: settings_with_no_background_0
       rect:
         serializedVersion: 2
-        x: 1300
-        y: 820
-        width: 550
-        height: 120
+        x: 388
+        y: 658
+        width: 214
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af0d0f7058012934ba2eac36890ac2c3
-      internalID: 778781176
+      spriteID: 12a815ce53d03fd49af34109356d39b5
+      internalID: 1620339854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MAIN_MENU_TEXT_1
+      name: settings_with_no_background_1
       rect:
         serializedVersion: 2
-        x: 1300
-        y: 692
-        width: 550
-        height: 120
+        x: 390
+        y: 351
+        width: 1014
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be6220a6942d7c4d8816f8680403b33
-      internalID: -1139518519
+      spriteID: 7bd1b36fc3e646e4e9fad51a79563f2e
+      internalID: -1015674746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MAIN_MENU_TEXT_2
+      name: settings_with_no_background_2
       rect:
         serializedVersion: 2
-        x: 1300
-        y: 558
-        width: 550
-        height: 120
+        x: 1491
+        y: 394
+        width: 88
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 221d3a1d6ababdd419033cf768547463
-      internalID: -884583201
+      spriteID: 9a4c80343a3f8a247b000b5e2ac5daf1
+      internalID: 1438010327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MAIN_MENU_TEXT_3
+      name: settings_with_no_background_3
       rect:
         serializedVersion: 2
-        x: 1300
-        y: 420
-        width: 550
-        height: 120
+        x: 1669
+        y: 19
+        width: 233
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,29 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c09d8b98bfeccdb498df69cdfee19d78
-      internalID: -1225044891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MAIN_MENU_TEXT_4
-      rect:
-        serializedVersion: 2
-        x: 1300
-        y: 290
-        width: 550
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c6da731d1c0f404a9e64789f69d288f
-      internalID: -1566616467
+      spriteID: e479290204e513948b85ba149cfd57d2
+      internalID: 1478861063
       vertices: []
       indices: 
       edges: []
@@ -217,7 +196,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: d3b92fae30a09374e9e34ea748860e52
     internalID: 0
     vertices: []
     indices: 
@@ -225,11 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MAIN_MENU_TEXT_0: -1003758579
-      MAIN_MENU_TEXT_1: -2076097535
-      MAIN_MENU_TEXT_2: 1179440585
-      MAIN_MENU_TEXT_3: -147079904
-      MAIN_MENU_TEXT_4: 1764911472
+      settings_with_no_background_0: 1620339854
+      settings_with_no_background_1: -1015674746
+      settings_with_no_background_2: 1438010327
+      settings_with_no_background_3: 1478861063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
