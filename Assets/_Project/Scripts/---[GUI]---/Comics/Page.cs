@@ -85,7 +85,9 @@ public class Page : MonoBehaviour
     private void NextSlideAudio()
     {
         //Audio
-        var prevAudio = currentIndex > 0 ? MainAudioClips[currentIndex - 1] : null;
+        AudioClip prevAudio;
+
+        prevAudio = currentIndex > 0 ? MainAudioClips[currentIndex - 1] : mainAudioSource.clip;
         if (MainAudioClips[currentIndex] != null && MainAudioClips[currentIndex] != prevAudio)
         {
             mainAudioSource.clip = MainAudioClips[currentIndex];
@@ -102,7 +104,7 @@ public class Page : MonoBehaviour
 
     internal void Deactivate()
     {
-        mainAudioSource.Stop();
+        //mainAudioSource.Stop();
         secondaryAudioSource.Stop();
         this.gameObject.SetActive(false);
     }
