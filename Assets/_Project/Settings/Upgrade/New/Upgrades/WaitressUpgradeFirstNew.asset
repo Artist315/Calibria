@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45328eaa8d0b91d4a96fbf2ff491d38e, type: 3}
-  m_Name: Girlyandy
+  m_Name: WaitressUpgradeFirstNew
   m_EditorClassIdentifier: 
-  MoneyCost: 10
-  LevelRequirement: 0
-  ObjectModels: []
-  ObjectName: Girlyandy
+  MoneyCost: 90
+  LevelRequirement: 4
+  ObjectModels:
+  - {fileID: 1973342182609141934, guid: a40d7dca2a052fb49b6f436b2543364c, type: 3}
+  ObjectName: FirstWaitressUpgrade
