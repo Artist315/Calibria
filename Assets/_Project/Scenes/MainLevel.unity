@@ -6290,7 +6290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183098211}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
   m_LocalPosition: {x: 0.25, y: 20, z: -9.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6717,7 +6717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277333619}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
   m_LocalPosition: {x: -6, y: 23, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41209,17 +41209,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 444369514}
     m_Modifications:
+    - target: {fileID: 843946542039659640, guid: 6f8434516094e1248b4e7244968aa4ba, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -2077626267460273165, guid: 0cce1eab096f76b44a3c66933329a7be, type: 2}
+    - target: {fileID: 967700943349059527, guid: 6f8434516094e1248b4e7244968aa4ba, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -576875913455463603, guid: 0cce1eab096f76b44a3c66933329a7be, type: 2}
     - target: {fileID: 3892334860679165543, guid: 6f8434516094e1248b4e7244968aa4ba, type: 3}
       propertyPath: _pausePanel
       value: 
       objectReference: {fileID: 444369515}
+    - target: {fileID: 4638557508497923365, guid: 6f8434516094e1248b4e7244968aa4ba, type: 3}
+      propertyPath: SecondaryAudioClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: fadb86026c5fb17438164c0d3106be48, type: 3}
     - target: {fileID: 6886392010009370531, guid: 6f8434516094e1248b4e7244968aa4ba, type: 3}
       propertyPath: m_Name
       value: IntroComicsUI
       objectReference: {fileID: 0}
     - target: {fileID: 6886392010009370531, guid: 6f8434516094e1248b4e7244968aa4ba, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372938115243101414, guid: 6f8434516094e1248b4e7244968aa4ba, type: 3}
       propertyPath: _playerInputs
