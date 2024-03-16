@@ -34,7 +34,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d7a0900683f3db445967c7fea54e1a2c, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5522f08ed3bf5dd40a64dd26986dc7d0, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -42,7 +42,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 417ff527efd18e042984e72692525568, type: 2}
+    m_Motion: {fileID: 7400000, guid: d19867b9f75e95044badd4410cd1897f, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -62,7 +62,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Waitress
+  m_Name: WaitressSecond
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -131,7 +131,7 @@ AnimatorStateMachine:
     m_Position: {x: 100, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1161262790926451583}
-    m_Position: {x: 180, y: 350, z: 0}
+    m_Position: {x: 280, y: 450, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -203,7 +203,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0c56dddec6d08e54c9094f51893cbac1, type: 2}
+    m_Motion: {fileID: 7400000, guid: d19867b9f75e95044badd4410cd1897f, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -211,7 +211,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c570aa9d9edc5bc4fa52b7a86d9bf3a7, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5d9d898a83b0af640b3e91812f7c88d6, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
