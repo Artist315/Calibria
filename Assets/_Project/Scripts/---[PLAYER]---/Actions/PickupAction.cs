@@ -22,7 +22,7 @@ public class PickupAction : PickupActionAbstract
 
     protected bool SequenceEnded = false;
 
-    private List<GameObject> _garbageColl = new();
+    public List<GameObject> GarbageColl { get; private set; } = new();
     private Sequence _sequence;
 
     private void Awake()
@@ -42,7 +42,7 @@ public class PickupAction : PickupActionAbstract
         {
             if (CurrentPickup == PickupsEnum.Garbage)
             {
-                foreach (var garbage in _garbageColl)
+                foreach (var garbage in GarbageColl)
                 {
                     garbage.transform.position = Vector3.MoveTowards(garbage.transform.position, PickupFollowTarget.position, 0.02f);
                 }
@@ -93,14 +93,14 @@ public class PickupAction : PickupActionAbstract
         SequenceEnded = true;
 
         if (pickup.PickupName == PickupsEnum.Garbage)
-            _garbageColl.Add(pickup.gameObject);
+            GarbageColl.Add(pickup.gameObject);
     }
 
     protected void CheckPickupState(GameObject pickup)
     {
         if (pickup.GetComponent<PickupController>().PickupName == PickupsEnum.Garbage)
         {
-            _garbageColl.Remove(pickup);
+            GarbageColl.Remove(pickup);
             CurrentGarbageNumber--;
 
             if (CurrentGarbageNumber <= 0)

@@ -1,12 +1,16 @@
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour, IAudioManager
+public class AudioManagerRandom : MonoBehaviour, IAudioManager
 {
+    [SerializeField]
+    private List<AudioClip> _audioClips;
     private AudioSource _AudioSource;
 
-    [SerializeField]
-    private AudioClip _audioClip;
     private bool _isPaused = false;
 
     public bool IsPlaying => _AudioSource.isPlaying;
@@ -16,11 +20,6 @@ public class AudioManager : MonoBehaviour, IAudioManager
         _AudioSource = GetComponent<AudioSource>();
     }
 
-    public void PlayAudio(AudioClip audioClip)
-    {
-        _AudioSource.clip = audioClip;
-        _AudioSource.Play();
-    }
     public void PlayPredefinedAudio()
     {
         if (_audioClip != null)
@@ -32,13 +31,13 @@ public class AudioManager : MonoBehaviour, IAudioManager
         }
     }
 
-    public void Stop()
+    internal void Stop()
     {
         //_isPaused = false;
         _AudioSource.Stop();
     }
 
-    public void Pause()
+    internal void Pause()
     {
         _isPaused = true;
         _AudioSource.Pause();
@@ -53,14 +52,8 @@ public class AudioManager : MonoBehaviour, IAudioManager
         }
     }
 
-    public void PlayPredefinedAudioSeriesCycled()
+    public void PlayAudio(AudioClip audioClip)
     {
-        if (_audioClip != null)
-        {
-            //_isPaused = false;
-            _AudioSource.loop = true;
-            _AudioSource.clip = _audioClip;
-            _AudioSource.Play();
-        }
+        throw new NotImplementedException();
     }
 }
