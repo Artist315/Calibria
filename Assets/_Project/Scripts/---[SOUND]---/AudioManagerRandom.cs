@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class AudioManagerRandom : MonoBehaviour, IAudioManager
@@ -22,11 +19,14 @@ public class AudioManagerRandom : MonoBehaviour, IAudioManager
 
     public void PlayPredefinedAudio()
     {
-        if (_audioClip != null)
+        var r  =new System.Random();
+
+        var audioClip = _audioClips[r.Next(0,_audioClips.Count)];
+        if (audioClip != null)
         {
             //_isPaused = false;
             _AudioSource.loop = false;
-            _AudioSource.clip = _audioClip;
+            _AudioSource.clip = audioClip;
             _AudioSource.Play();
         }
     }
@@ -37,7 +37,7 @@ public class AudioManagerRandom : MonoBehaviour, IAudioManager
         _AudioSource.Stop();
     }
 
-    internal void Pause()
+    public void Pause()
     {
         _isPaused = true;
         _AudioSource.Pause();
@@ -53,6 +53,11 @@ public class AudioManagerRandom : MonoBehaviour, IAudioManager
     }
 
     public void PlayAudio(AudioClip audioClip)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void PlayPredefinedAudioSeriesCycled()
     {
         throw new NotImplementedException();
     }

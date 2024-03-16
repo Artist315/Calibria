@@ -6,5 +6,6 @@ public interface IAudioManager
 
     void PlayAudio(AudioClip audioClip);
     void PlayPredefinedAudio();
-    public void PlayPredefinedAudioSeriesCycled();
+    public void PlayPredefinedAudioSeriesCycled(); 
+    public void Pause();
 }

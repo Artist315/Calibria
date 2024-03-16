@@ -26,4 +26,9 @@ public class AngryBossSound : EnviromentSound
         }
         return false;
     }
+
+    public override void Action()
+    {
+        _audioManager.PlayPredefinedAudio();
+    }
 }

@@ -6,7 +6,7 @@ public class EnviromentSound : MonoBehaviour
     private float _actionDelay = 0.35f;
 
     [SerializeField]
-    private IAudioManager _audioManager;
+    internal IAudioManager _audioManager;
 
     internal bool _playerInTrigger;
     private float _triggerStayTimer = 0;
@@ -15,7 +15,7 @@ public class EnviromentSound : MonoBehaviour
     {
         if (_audioManager == null)
         {
-            _audioManager = GetComponentInChildren<AudioManager>();
+            _audioManager = GetComponentInChildren<IAudioManager>();
         }         
     }
 
@@ -27,11 +27,9 @@ public class EnviromentSound : MonoBehaviour
 
             if (_triggerStayTimer >= _actionDelay)
             {
-                Debug.Log("Sound Played!!!!");
                 _playerInTrigger = true;
                 _triggerStayTimer = 0;
-
-                _audioManager.PlayPredefinedAudioSeriesCycled();
+                Action();
             }
         }
     }
@@ -39,6 +37,11 @@ public class EnviromentSound : MonoBehaviour
     public virtual bool IsTriggered(Collider other)
     {
         return other.CompareTag(TagConstants.Player) && !_playerInTrigger;
+    }
+    
+    public virtual void Action()
+    {
+        _audioManager.PlayPredefinedAudioSeriesCycled();
     }
 
     private void OnTriggerExit(Collider other)
