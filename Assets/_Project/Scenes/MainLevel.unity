@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6855,7 +6855,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 3.6e-44, z: 2.0941e-41, w: 1}
+  m_BoundingSphereOverride: {x: 0, y: 7e-45, z: 2.6637e-41, w: 1.6114932e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -6969,7 +6969,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 3.9e-44, z: 6.969e-42, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 7e-45, z: 2.6912e-41, w: 1.6114932e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -7210,7 +7210,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 6e-44, z: 1.4885e-41, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 7e-45, z: 2.6951e-41, w: 1.6114932e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -18682,6 +18682,18 @@ PrefabInstance:
       propertyPath: _pausePanel
       value: 
       objectReference: {fileID: 444369515}
+    - target: {fileID: 5397662592364101604, guid: 0bb4ff4329a95d949b060cf96baac45a, type: 3}
+      propertyPath: mainAudioSource
+      value: 
+      objectReference: {fileID: 1783056364}
+    - target: {fileID: 5397662592364101604, guid: 0bb4ff4329a95d949b060cf96baac45a, type: 3}
+      propertyPath: secondaryAudioSource
+      value: 
+      objectReference: {fileID: 1624168435}
+    - target: {fileID: 5397662592364101604, guid: 0bb4ff4329a95d949b060cf96baac45a, type: 3}
+      propertyPath: MainAudioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c774089e4d24ba84a8c067ad44253811, type: 3}
     - target: {fileID: 6371951492923601302, guid: 0bb4ff4329a95d949b060cf96baac45a, type: 3}
       propertyPath: m_Name
       value: FinalComicsUI
@@ -19776,7 +19788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528991622}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: 0.000000015389855, z: -0.000000007694927, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: -0.000000015389857, z: 0.000000007694929, w: 0.89442724}
   m_LocalPosition: {x: 0.53704834, y: 20.002703, z: 3.6271076}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19922,7 +19934,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 8.3e-44, z: 2.7156e-41, w: 1.7921086e+25}
+  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 4e-45, w: 2.6399e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -21125,7 +21137,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: -0.0005972391, y: 0, z: 0, w: 0.33333334}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 8.8e-44, z: 2.7366e-41, w: 3.229e-42}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -22676,7 +22688,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 9e-44, z: 1.2568e-41, w: 8.968e-42}
+  m_BoundingSphereOverride: {x: 6.25e-43, y: 1.61e-43, z: 0, w: -2.6772525e-28}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -35285,7 +35297,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 6.9e-44, z: 1.0836e-41, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.038e-42, z: 2.5959e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -40494,7 +40506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293579814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
   m_LocalPosition: {x: 0, y: 20, z: -28.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -47281,7 +47293,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 3.4e-44}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1e-45, z: 2.6951e-41, w: 1.7410775e+25}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -52394,7 +52406,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.1252013e+24, y: NaN, z: 1.0786447e+24, w: 0.0000000025637743}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1e-45, z: 2.7224e-41, w: 0.04296875}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -52589,6 +52601,30 @@ PrefabInstance:
       propertyPath: _playerInputs
       value: 
       objectReference: {fileID: 388935395}
+    - target: {fileID: 5095950346750062220, guid: b8d9c95c906f27741b57a94bedb1db6c, type: 3}
+      propertyPath: SecondaryAudioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 132cce9407361d94992bf3e04501e634, type: 3}
+    - target: {fileID: 5095950346750062220, guid: b8d9c95c906f27741b57a94bedb1db6c, type: 3}
+      propertyPath: SecondaryAudioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 08f6df56e5707b444a63b50f3c6fa494, type: 3}
+    - target: {fileID: 5095950346750062220, guid: b8d9c95c906f27741b57a94bedb1db6c, type: 3}
+      propertyPath: SecondaryAudioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 60d6a4dd42571d64c9042ca6477db5e0, type: 3}
+    - target: {fileID: 5095950346750062220, guid: b8d9c95c906f27741b57a94bedb1db6c, type: 3}
+      propertyPath: SecondaryAudioClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f687613069e7514f92840f2a788ffe4, type: 3}
+    - target: {fileID: 5095950346750062220, guid: b8d9c95c906f27741b57a94bedb1db6c, type: 3}
+      propertyPath: SecondaryAudioClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 553999cb87539574fb9f703f3e7aa0d1, type: 3}
+    - target: {fileID: 5095950346750062220, guid: b8d9c95c906f27741b57a94bedb1db6c, type: 3}
+      propertyPath: SecondaryAudioClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: fc1d5e716a397884bba41d670a8aafae, type: 3}
     - target: {fileID: 6260377485074233801, guid: b8d9c95c906f27741b57a94bedb1db6c, type: 3}
       propertyPath: m_Name
       value: UltimatumComicsUI
@@ -53220,6 +53256,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1432569101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1624168435 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 781223707865900196, guid: 0bb4ff4329a95d949b060cf96baac45a, type: 3}
+  m_PrefabInstance: {fileID: 440295547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1626191072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63560,7 +63601,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 3e-44, z: 2.7952e-41, w: 2.7622e-41}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 9.68e-43, z: 2.599e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -63848,7 +63889,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 3.8e-44, z: 2.1293e-41, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.93e-43, z: 2.6393e-41, w: 0.33332825}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -63963,6 +64004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1783056364 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1751420882562174000, guid: 0bb4ff4329a95d949b060cf96baac45a, type: 3}
+  m_PrefabInstance: {fileID: 440295547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1784557409
 GameObject:
   m_ObjectHideFlags: 3
