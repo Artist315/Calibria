@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaitressStateManager : StaffStateManager<WaitressStateManager>
+public class WaitressStateManager : StaffStateManager<WaitressStateManager>, IActivation
 {
     public ChooseActionState ChooseActionState = new ChooseActionState();
     public GoAfterPickupState GoAfterPickupState = new GoAfterPickupState();
@@ -21,14 +21,24 @@ public class WaitressStateManager : StaffStateManager<WaitressStateManager>
 
     [SerializeField] private UpgradeUI _upgradeUI;
 
+    private Coroutine coroutine { get; set; }
+
+    public void Activate()
+    {
+        Start();
+    }
     protected override void Start()
     {
+
         Instance = this;
         PickupAction = GetComponent<WaitressPickupAction>();
 
         base.Start();
 
-        StartCoroutine(CheckOnNewSitPoints());
+        if (coroutine == null)
+        {
+            coroutine = StartCoroutine(CheckOnNewSitPoints());
+        }
 
         SetState(ChooseActionState);
     }
@@ -77,5 +87,7 @@ public class WaitressStateManager : StaffStateManager<WaitressStateManager>
         {
             SitPoints.Add(sitPoint.GetComponent<ClientSitPoint>());
         }
+
+        Debug.Log($"{SitPoints.Count} was found");
     }
 }

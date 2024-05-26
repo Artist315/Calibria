@@ -9,7 +9,7 @@ public class Upgrade : MonoBehaviour
     public CustomizationUpgradeSO CustomizationUpgradeSettings;
     protected MoneyManager MoneyManager;
     protected LevelManager LevelManager;
-    public bool IsUpdated { get; private set; } = false;
+    public bool IsUpgraded { get; private set; } = false;
 
     private Button Button;
     [SerializeField]
@@ -30,7 +30,7 @@ public class Upgrade : MonoBehaviour
         LevelManager = LevelManager.Instance;
         ResourcesEvent.ResourceValueUpdated += UpdateButton;
         UpdateButton();
-        if (IsUpdated)
+        if (IsUpgraded)
         {
             Unsubscribe();
             ActivateObject();
@@ -61,11 +61,11 @@ public class Upgrade : MonoBehaviour
 
     private void UpdateButton()
     {
-        IsUpdated = PlayerPrefs.GetInt(CustomizationUpgradeSettings.ObjectName, 0) == 1;
+        IsUpgraded = PlayerPrefs.GetInt(CustomizationUpgradeSettings.ObjectName, 0) == 1;
         var isEnoughResources  = MoneyManager.Resource     >= CustomizationUpgradeSettings.MoneyCost;
         var isLevelrequirement = LevelManager.CurrentLevel >= CustomizationUpgradeSettings.LevelRequirement;
 
-        Button.interactable = !IsUpdated && isEnoughResources && isLevelrequirement;
+        Button.interactable = !IsUpgraded && isEnoughResources && isLevelrequirement;
         //Debug.Log($"{CustomizationUpgradeSettings.ObjectName} is{!IsUpdated && isEnoughResources && isLevelrequirement} ");
     }
 
@@ -87,6 +87,10 @@ public class Upgrade : MonoBehaviour
         foreach (var objectModel in ObjectModels)
         {
             objectModel.SetActive(true);
+            if (objectModel.TryGetComponent<IActivation>(out var t))
+            {
+                t.Activate();
+            }
         }
     }
     private void HideObject()

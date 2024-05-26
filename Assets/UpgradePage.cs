@@ -50,7 +50,7 @@ public class UpgradePage : MonoBehaviour
 
     public void CheckIfAllUpgraded()
     {
-        if (upgrades.All(x => x.IsUpdated))
+        if (upgrades.All(x => x.IsUpgraded))
         {
             upgrades.ForEach(x =>
             {

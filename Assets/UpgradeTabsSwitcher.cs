@@ -14,21 +14,21 @@ public class UpgradeTabsSwitcher : MonoBehaviour
     private void Start()
     {
         TabSelectors = GetComponentsInChildren<Button>().ToList();
-        Ñlose();
+        Close();
     }
 
     private void Open()
     {
         TabSelectors.ForEach(tab => { tab.gameObject.SetActive(true); });
         EventsManager.OnUpgradeOpened -= Open;
-        EventsManager.OnUpgradeClosed += Ñlose;
+        EventsManager.OnUpgradeClosed += Close;
         FirstTab.onClick.Invoke();
     }
 
-    private void Ñlose()
+    private void Close()
     {
         TabSelectors.ForEach(tab => { tab.gameObject.SetActive(false); });
         EventsManager.OnUpgradeOpened += Open;
-        EventsManager.OnUpgradeClosed -= Ñlose;
+        EventsManager.OnUpgradeClosed -= Close;
     }
 }

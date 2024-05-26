@@ -5,8 +5,10 @@ using UnityEngine.Playables;
 public class TutorialManager : MonoBehaviour
 {
     [SerializeField] private PickupAction _playerPickupAction;
-    [SerializeField] private UpgradeUI _upgrades;
     [SerializeField] private GameObject _clientSpawner;
+    [Header("Beginning Tutorial")]
+    [SerializeField] private Upgrade kitchenUpgrade;
+    [SerializeField] private Upgrade vIPUpgrade;
 
     [Header("Beginning Tutorial")]
     [SerializeField] private PlayableDirector _kegSpawnerScene;
@@ -112,9 +114,9 @@ public class TutorialManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         
-        if (_upgrades.KitchenUpgrade.IsUpgraded == false)
+        if (kitchenUpgrade.IsUpgraded == false)
         {
-            yield return new WaitUntil(() => _upgrades.KitchenUpgrade.IsUpgraded);
+            yield return new WaitUntil(() => kitchenUpgrade.IsUpgraded);
             StartCoroutine(PlayTimeline(_pastaScene));
 
             yield return new WaitUntil(() => _playerPickupAction.CurrentPickup == PickupsEnum.Pasta);
@@ -141,9 +143,9 @@ public class TutorialManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        if (_upgrades.VipUpgrade.IsUpgraded == false)
+        if (vIPUpgrade.IsUpgraded == false)
         {
-            yield return new WaitUntil(() => _upgrades.VipUpgrade.IsUpgraded);
+            yield return new WaitUntil(() => vIPUpgrade.IsUpgraded);
             StartCoroutine(PlayTimeline(_whiskeyScene));
 
             yield return new WaitUntil(() => _playerPickupAction.CurrentPickup == PickupsEnum.Whiskey);

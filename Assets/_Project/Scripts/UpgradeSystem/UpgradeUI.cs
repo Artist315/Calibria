@@ -29,10 +29,12 @@ public class UpgradeUI : MonoBehaviour
     public Text BartenderLvlRequirement;
     public Text BartenderMoneyCost;
 
-    [HideInInspector] public VIPZoneUpgrade VipUpgrade;
-    [HideInInspector] public KitchenUpgrade KitchenUpgrade;
-    [HideInInspector] public WaitressUpgrade WaitressUpgrade;
-    [HideInInspector] public BartenderUpgrade BartenderUpgrade;
+    [SerializeField] public Upgrade VipUpgrade;
+    [SerializeField] public Upgrade KitchenUpgrade;
+
+    [SerializeField] public Upgrade WaitressFirstUpgrade;
+    [SerializeField] public Upgrade WaitressSecondUpgrade;
+    [SerializeField] public Upgrade BartenderUpgrade;
 
     private CinemachineBrain _cinemachineBrain;
     //private Animator _anim;
@@ -45,13 +47,13 @@ public class UpgradeUI : MonoBehaviour
         //_anim = GetComponent<Animator>();
         _cinemachineBrain = Camera.main.GetComponent<CinemachineBrain>();
 
-        VipUpgrade = GetComponent<VIPZoneUpgrade>();
-        KitchenUpgrade = GetComponent<KitchenUpgrade>();
-        WaitressUpgrade = GetComponent<WaitressUpgrade>();
-        BartenderUpgrade = GetComponent<BartenderUpgrade>();
+        //VipUpgrade = GetComponent<VIPZoneUpgrade>();
+        //KitchenUpgrade = GetComponent<KitchenUpgrade>();
+        //WaitressUpgrade = GetComponent<WaitressUpgrade>();
+        //BartenderUpgrade = GetComponent<BartenderUpgrade>();
 
-        _animIDFadeIn = Animator.StringToHash("FadeIn");
-        _animIDFadeOut = Animator.StringToHash("FadeOut");
+        //_animIDFadeIn = Animator.StringToHash("FadeIn");
+        //_animIDFadeOut = Animator.StringToHash("FadeOut");
 
         //KitchenLvlRequirement.text = KitchenUpgrade.LvlRequirement.ToString();
         //KitchenMoneyCost.text = KitchenUpgrade.MoneyCost.ToString();
@@ -69,10 +71,10 @@ public class UpgradeUI : MonoBehaviour
 
     private void Update()
     {
-        if (VipUpgrade.IsUpgraded && KitchenUpgrade.IsUpgraded && WaitressUpgrade.IsUpgraded && BartenderUpgrade.IsUpgraded)
-        {
-            _noUpgradesText.SetActive(true);
-        }
+        //if (VipUpgrade.IsUpgraded && KitchenUpgrade.IsUpgraded && WaitressUpgrade.IsUpgraded && BartenderUpgrade.IsUpgraded)
+        //{
+        //    _noUpgradesText.SetActive(true);
+        //}
     }
 
     public void Close()
