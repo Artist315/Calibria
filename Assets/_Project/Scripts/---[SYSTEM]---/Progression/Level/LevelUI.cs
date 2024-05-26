@@ -13,7 +13,7 @@ public class LevelUI : MonoBehaviour
         }
         else 
         {
-            _text.text = (value + 1).ToString();
+            _text.text = value.ToString();
         }
     }
 }

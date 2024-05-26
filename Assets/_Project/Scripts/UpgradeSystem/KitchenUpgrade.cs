@@ -21,9 +21,9 @@ public class KitchenUpgrade : UpgradeAbstract
             KitchenPrefab.SetActive(true);
             _clientSpawner.FindSitPoints();
             PlayerPrefs.SetInt(PlayerPrefsConstants.KitchenUpgrade, 1);
-            
-            
-            MoneyManager.ResourceValueUpdated -= ButtonUpdate;
+
+
+            ResourcesEvent.ResourceValueUpdated -= ButtonUpdate;
             MoneyManager.TrySubtractResource(MoneyCost, out var resource);
             
             ChangeButtonToDone();

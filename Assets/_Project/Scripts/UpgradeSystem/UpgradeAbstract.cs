@@ -19,7 +19,7 @@ public abstract class UpgradeAbstract : MonoBehaviour
         MoneyManager = MoneyManager.Instance;
         ReputationManager = ReputationManager.Instance;
 
-        MoneyManager.ResourceValueUpdated += ButtonUpdate;
+        ResourcesEvent.ResourceValueUpdated += ButtonUpdate;
 
         LoadUpgrade();
     }
@@ -32,8 +32,8 @@ public abstract class UpgradeAbstract : MonoBehaviour
     {
         if (IsUpgraded) return;
 
-        IsAvailable = MoneyCost <= MoneyManager.Resource &&
-                       ReputationManager.LevelManager.CurrentLevel + 1 >= LvlRequirement;
+        IsAvailable = MoneyManager.Resource >= MoneyCost &&
+                       ReputationManager.LevelManager.CurrentLevel >= LvlRequirement;
 
         if (IsAvailable)
         {

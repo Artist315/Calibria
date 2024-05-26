@@ -28,7 +28,7 @@ public class Upgrade : MonoBehaviour
 
         MoneyManager = MoneyManager.Instance;
         LevelManager = LevelManager.Instance;
-        MoneyManager.ResourceValueUpdated += UpdateButton;
+        ResourcesEvent.ResourceValueUpdated += UpdateButton;
         UpdateButton();
         if (IsUpdated)
         {
@@ -56,15 +56,17 @@ public class Upgrade : MonoBehaviour
 
     private void Unsubscribe()
     {
-        MoneyManager.ResourceValueUpdated -= UpdateButton;
+        ResourcesEvent.ResourceValueUpdated -= UpdateButton;
     }
 
     private void UpdateButton()
     {
         IsUpdated = PlayerPrefs.GetInt(CustomizationUpgradeSettings.ObjectName, 0) == 1;
-        var isEnoughResources = CustomizationUpgradeSettings.MoneyCost <= MoneyManager.Resource;
-        var isLevelrequirement = CustomizationUpgradeSettings.LevelRequirement <= LevelManager.CurrentLevel;
+        var isEnoughResources  = MoneyManager.Resource     >= CustomizationUpgradeSettings.MoneyCost;
+        var isLevelrequirement = LevelManager.CurrentLevel >= CustomizationUpgradeSettings.LevelRequirement;
+
         Button.interactable = !IsUpdated && isEnoughResources && isLevelrequirement;
+        //Debug.Log($"{CustomizationUpgradeSettings.ObjectName} is{!IsUpdated && isEnoughResources && isLevelrequirement} ");
     }
 
     private void BuyCustomization()

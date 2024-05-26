@@ -2,8 +2,6 @@
 
 public abstract class BaseResourceManager : MonoBehaviour
 {
-    public delegate void ResourceValueChanged();
-    public event ResourceValueChanged ResourceValueUpdated;
     
     public int Resource {  get; internal set; }
     public abstract string Name { get; }
@@ -15,7 +13,7 @@ public abstract class BaseResourceManager : MonoBehaviour
 
     internal void SaveResource()
     {
-        ResourceValueUpdated?.Invoke();
+        ResourcesEvent.CallResourceValueUpdated();
         PlayerPrefs.SetInt(Name, Resource);
     }
 

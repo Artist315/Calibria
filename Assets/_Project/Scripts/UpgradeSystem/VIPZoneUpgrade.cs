@@ -23,8 +23,8 @@ public class VIPZoneUpgrade : UpgradeAbstract
             WhiskeySpawner.SetActive(true);
             VipClientsSpawner.SetActive(true);
             PlayerPrefs.SetInt(PlayerPrefsConstants.VIPZoneUpgrade, 1);
-            
-            MoneyManager.ResourceValueUpdated -= ButtonUpdate;
+
+            ResourcesEvent.ResourceValueUpdated -= ButtonUpdate;
             MoneyManager.TrySubtractResource(MoneyCost, out var resource);
             
             ChangeButtonToDone();

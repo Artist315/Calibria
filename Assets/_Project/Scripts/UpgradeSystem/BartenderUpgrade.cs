@@ -18,8 +18,8 @@ public class BartenderUpgrade : UpgradeAbstract
         {
             Bartender.SetActive(true);
             PlayerPrefs.SetInt(PlayerPrefsConstants.BartenderUpgrade, 1);
-            
-            MoneyManager.ResourceValueUpdated -= ButtonUpdate;
+
+            ResourcesEvent.ResourceValueUpdated -= ButtonUpdate;
             MoneyManager.TrySubtractResource(MoneyCost, out var resource);
             
             ChangeButtonToDone();

@@ -61,7 +61,7 @@ public class LevelManager : MonoBehaviour
 
     public void GetCurrentLevel()
     {
-        CurrentLevel = PlayerPrefs.GetInt(PlayerPrefsConstants.PlayerLevel, 0);
+        CurrentLevel = PlayerPrefs.GetInt(PlayerPrefsConstants.PlayerLevel, 1);
     }
 
     private void UpdateLevel()

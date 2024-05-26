@@ -18,8 +18,8 @@ public class WaitressUpgrade : UpgradeAbstract
         {
             Waitress.SetActive(true);
             PlayerPrefs.SetInt(PlayerPrefsConstants.WaitressUpgrade, 1);
-            
-            MoneyManager.ResourceValueUpdated -= ButtonUpdate;
+
+            ResourcesEvent.ResourceValueUpdated -= ButtonUpdate;
             MoneyManager.TrySubtractResource(MoneyCost, out var resource);
             
             ChangeButtonToDone();
