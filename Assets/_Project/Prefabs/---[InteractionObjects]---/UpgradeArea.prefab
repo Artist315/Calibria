@@ -300,7 +300,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioClip: {fileID: 8300000, guid: bf552af968244c34d96b9f359877cdc0, type: 3}
-  _audioClipList: []
 --- !u!82 &3712521950981743234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -539,6 +538,7 @@ GameObject:
   - component: {fileID: 8692496686891744545}
   - component: {fileID: 2770104879660258817}
   - component: {fileID: 4367762610810156288}
+  - component: {fileID: 1455925845951779032}
   m_Layer: 0
   m_Name: UpgradeArea
   m_TagString: Untagged
@@ -580,8 +580,8 @@ MonoBehaviour:
   _actionDelay: 0.35
   _upgradeUI: {fileID: 0}
   _audioManager: {fileID: 0}
-  _closeAudioClip: {fileID: 0}
-  _openAudioClip: {fileID: 0}
+  _closeAudioClip: {fileID: 8300000, guid: fbd6ed5d835dc5b41a6b504c832e8e27, type: 3}
+  _openAudioClip: {fileID: 8300000, guid: 2c340659b2c2dbe43a739c87244b0a8e, type: 3}
 --- !u!114 &1365461820759492314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,3 +673,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1455925845951779032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7857386170167319485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 920743d7da56deb44bdffddd6a255c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradePages: []

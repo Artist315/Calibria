@@ -6,24 +6,30 @@ using UnityEngine;
 public class UpgradePage : MonoBehaviour
 {
     public GameObject AllUpgradedPage;
-    private List<Upgrade> upgrades;
-    private bool _isAllUpgraded = false;
+    public List<Upgrade> Upgrades {  get; private set; }
+    public bool IsAllUpgraded { get; private set; } = false;
+
+    private void Awake()
+    {
+        Upgrades = GetComponentsInChildren<Upgrade>().ToList();
+    }
 
     private void Start()
     {
         AllUpgradedPage.SetActive(false);
-        upgrades = GetComponentsInChildren<Upgrade>().ToList();
+
+        IsAllUpgraded = Upgrades.All(x => x.IsUpgraded);
         HideElements();
-        //EventsManager.OnCustomizationUpgraded += CheckIfAllUpgraded;
+
         EventsManager.OnUpgradeClosed += HideElements;
 
     }
 
     public void HideElements()
     {
-        if (!_isAllUpgraded)
+        if (!IsAllUpgraded)
         {
-            upgrades.ForEach(x =>
+            Upgrades.ForEach(x =>
             {
                 x.gameObject.SetActive(false);
             });
@@ -35,9 +41,9 @@ public class UpgradePage : MonoBehaviour
     }
     public void ShowElements()
     {
-        if (!_isAllUpgraded)
+        if (!IsAllUpgraded)
         {
-            upgrades.ForEach(x =>
+            Upgrades.ForEach(x =>
             {
                 x.gameObject.SetActive(true);
             });
@@ -50,13 +56,13 @@ public class UpgradePage : MonoBehaviour
 
     public void CheckIfAllUpgraded()
     {
-        if (upgrades.All(x => x.IsUpgraded))
+        if (Upgrades.All(x => x.IsUpgraded))
         {
-            upgrades.ForEach(x =>
+            Upgrades.ForEach(x =>
             {
                 x.gameObject.SetActive(false);
             });
-            _isAllUpgraded = true;
+            IsAllUpgraded = true;
             AllUpgradedPage.SetActive(true);
             //EventsManager.OnCustomizationUpgraded -= CheckIfAllUpgraded;
         }

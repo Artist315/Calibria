@@ -10,6 +10,7 @@ public class Upgrade : MonoBehaviour
     protected MoneyManager MoneyManager;
     protected LevelManager LevelManager;
     public bool IsUpgraded { get; private set; } = false;
+    public bool CanBeUpgraded { get; private set; } = false;
 
     private Button Button;
     [SerializeField]
@@ -20,14 +21,26 @@ public class Upgrade : MonoBehaviour
     [SerializeField]
     private List<GameObject> ObjectModels;
     private UpgradePage upgradePage;
-    private void Start()
+
+    private void Awake()
     {
+        IsUpgraded = PlayerPrefs.GetInt(CustomizationUpgradeSettings.ObjectName, 0) == 1;
+
         Button = GetComponentInChildren<Button>();
         upgradePage = GetComponentInParent<UpgradePage>();
-        UpdateText();
 
-        MoneyManager = MoneyManager.Instance;
-        LevelManager = LevelManager.Instance;
+        UpdateText();
+        HideObject();
+
+
+        MoneyManager = FindObjectOfType<MoneyManager>();
+        LevelManager = FindObjectOfType<LevelManager>();
+
+        UpdateButton();
+
+    }
+    private void Start()
+    {
         ResourcesEvent.ResourceValueUpdated += UpdateButton;
         UpdateButton();
         if (IsUpgraded)
@@ -64,9 +77,9 @@ public class Upgrade : MonoBehaviour
         IsUpgraded = PlayerPrefs.GetInt(CustomizationUpgradeSettings.ObjectName, 0) == 1;
         var isEnoughResources  = MoneyManager.Resource     >= CustomizationUpgradeSettings.MoneyCost;
         var isLevelrequirement = LevelManager.CurrentLevel >= CustomizationUpgradeSettings.LevelRequirement;
-
-        Button.interactable = !IsUpgraded && isEnoughResources && isLevelrequirement;
-        //Debug.Log($"{CustomizationUpgradeSettings.ObjectName} is{!IsUpdated && isEnoughResources && isLevelrequirement} ");
+        CanBeUpgraded = !IsUpgraded && isEnoughResources && isLevelrequirement;
+        Button.interactable = CanBeUpgraded;
+        //Debug.Log($"{CustomizationUpgradeSettings.ObjectName} is{!IsUpgraded && isEnoughResources && isLevelrequirement} ");
     }
 
     private void BuyCustomization()

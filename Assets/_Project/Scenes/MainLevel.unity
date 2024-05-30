@@ -6855,7 +6855,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 7e-45, z: 2.6637e-41, w: 1.6114932e-38}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.2e-44, z: 1.2935e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -6969,7 +6969,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 7e-45, z: 2.6912e-41, w: 1.6114932e-38}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.2e-44, z: 1.6966e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -7038,7 +7038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277333619}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
   m_LocalPosition: {x: -6, y: 23, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7210,7 +7210,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 7e-45, z: 2.6951e-41, w: 1.6114932e-38}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 2.4238e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12818,7 +12818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371224130}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389857, z: 0.000000007694929, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389855, z: -0.000000007694927, w: 0.89442724}
   m_LocalPosition: {x: 0, y: 20, z: -28.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19934,7 +19934,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 4e-45, w: 2.6399e-41}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.2e-44, z: 1.9439e-41, w: 2.6905e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -21137,7 +21137,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 8.8e-44, z: 2.7366e-41, w: 3.229e-42}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.5e-44, z: 1.532e-42, w: 2.8298368e+20}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -22688,7 +22688,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.25e-43, y: 1.61e-43, z: 0, w: -2.6772525e-28}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.2e-44, z: 1.639e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -24005,18 +24005,22 @@ PrefabInstance:
       propertyPath: _upgradeUI
       value: 
       objectReference: {fileID: 6083832579677253392}
+    - target: {fileID: 1455925845951779032, guid: 82f86c0adb8dffc4db484bf19eb885bf, type: 3}
+      propertyPath: upgradePages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455925845951779032, guid: 82f86c0adb8dffc4db484bf19eb885bf, type: 3}
+      propertyPath: upgradePages.Array.data[0]
+      value: 
+      objectReference: {fileID: 1403725767}
+    - target: {fileID: 1455925845951779032, guid: 82f86c0adb8dffc4db484bf19eb885bf, type: 3}
+      propertyPath: upgradePages.Array.data[1]
+      value: 
+      objectReference: {fileID: 1550935638}
     - target: {fileID: 5774852166863562710, guid: 82f86c0adb8dffc4db484bf19eb885bf, type: 3}
       propertyPath: _upgradeUI
       value: 
       objectReference: {fileID: 6083832579677253392}
-    - target: {fileID: 5774852166863562710, guid: 82f86c0adb8dffc4db484bf19eb885bf, type: 3}
-      propertyPath: _openAudioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 2c340659b2c2dbe43a739c87244b0a8e, type: 3}
-    - target: {fileID: 5774852166863562710, guid: 82f86c0adb8dffc4db484bf19eb885bf, type: 3}
-      propertyPath: _closeAudioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: fbd6ed5d835dc5b41a6b504c832e8e27, type: 3}
     - target: {fileID: 7160340732423363797, guid: 82f86c0adb8dffc4db484bf19eb885bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.345
@@ -24060,10 +24064,6 @@ PrefabInstance:
     - target: {fileID: 7857386170167319485, guid: 82f86c0adb8dffc4db484bf19eb885bf, type: 3}
       propertyPath: m_Name
       value: UpgradeArea
-      objectReference: {fileID: 0}
-    - target: {fileID: 7857386170167319485, guid: 82f86c0adb8dffc4db484bf19eb885bf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35297,7 +35297,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.038e-42, z: 2.5959e-41, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.4e-44, z: 2.0324e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -40506,7 +40506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293579814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
   m_LocalPosition: {x: 0, y: 20, z: -28.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -40738,7 +40738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303003317}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389857, z: 0.000000007694929, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389855, z: -0.000000007694927, w: 0.89442724}
   m_LocalPosition: {x: 13.78, y: 20.001, z: 0.39999962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41207,7 +41207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360613427}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389855, z: 0.000000007694927, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389857, z: -0.000000007694929, w: 0.89442724}
   m_LocalPosition: {x: 0, y: 20, z: -28.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -47293,7 +47293,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1e-45, z: 2.6951e-41, w: 1.7410775e+25}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 0, z: 2.7475e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -52406,7 +52406,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1e-45, z: 2.7224e-41, w: 0.04296875}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.7e-44, z: 1.6163e-41, w: 54.856445}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -63422,6 +63422,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2781565819679293181, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
   m_PrefabInstance: {fileID: 1738939591}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1738939593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8531588671910440384, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
+  m_PrefabInstance: {fileID: 1738939591}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85f1056fcf080841b1e5d4070eef31d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1745436014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63601,7 +63612,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 9.68e-43, z: 2.599e-41, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 2.871e-42, z: 6e-44, w: 1.8e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -63889,7 +63900,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.93e-43, z: 2.6393e-41, w: 0.33332825}
+  m_BoundingSphereOverride: {x: 2.2e-44, y: 1.7981e-41, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -70405,6 +70416,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2781565819679293181, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
   m_PrefabInstance: {fileID: 1985601596}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1985601598 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8531588671910440384, guid: b8fca67cad01a2b49b1344a20333aa96, type: 3}
+  m_PrefabInstance: {fileID: 1985601596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85f1056fcf080841b1e5d4070eef31d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1987250750
 GameObject:
   m_ObjectHideFlags: 0
@@ -72749,41 +72771,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6657915d64a817148a93dd9349be9f9d, type: 3}
---- !u!114 &4383543001712575655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7711687332954957228}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c554c29ced23396439e9f2d10596a4f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoneyCost: 200
-  LvlRequirement: 2
-  _button: {fileID: 0}
-  KitchenPrefab: {fileID: 7360245121319640320}
-  _clientSpawner: {fileID: 1420441471}
---- !u!114 &4419287809463177266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7711687332954957228}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec74de2c9a52cb41b8f467f9029f820, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoneyCost: 500
-  LvlRequirement: 5
-  _button: {fileID: 0}
-  VipZone: {fileID: 1220642803}
-  VipClientsSpawner: {fileID: 1474853023}
-  WhiskeySpawner: {fileID: 911940145}
 --- !u!1 &4571856531110504007
 GameObject:
   m_ObjectHideFlags: 0
@@ -73690,7 +73677,8 @@ MonoBehaviour:
   BartenderMoneyCost: {fileID: 0}
   VipUpgrade: {fileID: 0}
   KitchenUpgrade: {fileID: 0}
-  WaitressUpgrade: {fileID: 0}
+  WaitressFirstUpgrade: {fileID: 0}
+  WaitressSecondUpgrade: {fileID: 0}
   BartenderUpgrade: {fileID: 0}
   IsAnimated: 0
 --- !u!4 &6177891291902267679
@@ -74193,9 +74181,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6083832579677253392}
     - target: {fileID: 1244353981848369819, guid: 2cc18b5925e1b514f81e725962abcda1, type: 3}
+      propertyPath: vIPUpgrade
+      value: 
+      objectReference: {fileID: 1738939593}
+    - target: {fileID: 1244353981848369819, guid: 2cc18b5925e1b514f81e725962abcda1, type: 3}
       propertyPath: _clientSpawner
       value: 
       objectReference: {fileID: 1601843156}
+    - target: {fileID: 1244353981848369819, guid: 2cc18b5925e1b514f81e725962abcda1, type: 3}
+      propertyPath: kitchenUpgrade
+      value: 
+      objectReference: {fileID: 1985601598}
     - target: {fileID: 1244353981848369819, guid: 2cc18b5925e1b514f81e725962abcda1, type: 3}
       propertyPath: _pastaClientArrow
       value: 
@@ -75834,11 +75830,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8114187256485396953}
   - component: {fileID: 6083832579677253392}
-  - component: {fileID: 4383543001712575655}
-  - component: {fileID: 4419287809463177266}
-  - component: {fileID: 8114187256485396955}
-  - component: {fileID: 8114187256485396954}
-  - component: {fileID: 8114187256485396957}
   - component: {fileID: 8114187256485396956}
   m_Layer: 5
   m_Name: UpgradePanel
@@ -76105,38 +76096,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8114187256485396954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7711687332954957228}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f3c14adc436e3d49b57bb8abade58a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoneyCost: 300
-  LvlRequirement: 4
-  _button: {fileID: 0}
-  Bartender: {fileID: 1601358733}
---- !u!114 &8114187256485396955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7711687332954957228}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0db1ed114842eb449d9a9b37dedd076, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoneyCost: 300
-  LvlRequirement: 3
-  _button: {fileID: 0}
-  Waitress: {fileID: 0}
 --- !u!95 &8114187256485396956
 Animator:
   serializedVersion: 5
@@ -76145,7 +76104,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7711687332954957228}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c20a7cbf56f7ff443a77309ff120dd8f, type: 2}
   m_CullingMode: 0
@@ -76158,22 +76117,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8114187256485396957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7711687332954957228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d94859f5dd40384395a68ff18961a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _kitchenUpgradeSettings: {fileID: 11400000, guid: 10bfee0dfabeb444fb3fbf777430ab0b, type: 2}
-  _vipUpgradeSettings: {fileID: 11400000, guid: eff1d9f4c98295b46bbdb53ede77c5ff, type: 2}
-  _waitressUpgradeSettings: {fileID: 11400000, guid: 161cd719b9ac8a24aadd539eb84bee08, type: 2}
-  _bartenderUpgradeSettings: {fileID: 11400000, guid: abb400b97fd912f488ef4a387380c3b4, type: 2}
 --- !u!1 &8138199915125719391
 GameObject:
   m_ObjectHideFlags: 0
