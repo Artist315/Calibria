@@ -72,7 +72,7 @@ public class WaitressStateManager : StaffStateManager<WaitressStateManager>, IAc
         yield return new WaitForSeconds(0.5f);
 
         FindSitPoints();
-        yield return new WaitUntil(() => _upgradeUI.KitchenUpgrade.IsUpgraded);
+        yield return new WaitUntil(() => _upgradeUI.KitchenUpgrade.IsUpgraded); 
         FindSitPoints();
         yield return new WaitUntil(() => _upgradeUI.VipUpgrade.IsUpgraded);
         FindSitPoints();
@@ -87,7 +87,5 @@ public class WaitressStateManager : StaffStateManager<WaitressStateManager>, IAc
         {
             SitPoints.Add(sitPoint.GetComponent<ClientSitPoint>());
         }
-
-        Debug.Log($"{SitPoints.Count} was found");
     }
 }

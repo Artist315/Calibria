@@ -36,6 +36,11 @@ public class UpgradePage : MonoBehaviour
         }
         else
         {
+            Upgrades.ForEach(x =>
+            {
+                x.gameObject.SetActive(false);
+            });
+
             AllUpgradedPage.SetActive(false);
         }
     }

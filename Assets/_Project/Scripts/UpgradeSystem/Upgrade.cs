@@ -38,11 +38,8 @@ public class Upgrade : MonoBehaviour
 
         UpdateButton();
 
-    }
-    private void Start()
-    {
         ResourcesEvent.ResourceValueUpdated += UpdateButton;
-        UpdateButton();
+
         if (IsUpgraded)
         {
             Unsubscribe();
@@ -55,6 +52,10 @@ public class Upgrade : MonoBehaviour
             HideObject();
         }
         Button.onClick.AddListener(BuyCustomization);
+
+    }
+    private void Start()
+    {
     }
 
 
