@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4958e70b0cd6a5a4fb03fd7d9511b306, type: 3}
   m_Name: LevelsDefault
   m_EditorClassIdentifier: 
-  NextLevelRequirements: 320000003c00000046000000500000005a0000006e000000c8000000
+  NextLevelRequirements: 00000000320000003c00000046000000500000005a0000006e000000c800000000000000
