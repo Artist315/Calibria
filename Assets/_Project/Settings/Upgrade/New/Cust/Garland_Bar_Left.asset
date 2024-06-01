@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45328eaa8d0b91d4a96fbf2ff491d38e, type: 3}
   m_Name: Garland_Bar_Left
   m_EditorClassIdentifier: 
-  MoneyCost: 10
+  MoneyCost: 15
   LevelRequirement: 0
   ObjectModels: []
   ObjectName: Garland_Bar_Left
