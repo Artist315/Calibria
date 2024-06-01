@@ -6,6 +6,14 @@ public class DumpPickupAction : PickupActionAbstract
 {
     [SerializeField] private LayerMask ObstacleMask;
     [SerializeField] private int SubtractMoney = 2;
+    [SerializeField] private int ReputationForGarbage = 2;
+
+    private ReputationManager reputationManager;
+
+    private void Start()
+    {
+        reputationManager = ReputationManager.Instance;
+    }
 
     protected override void GrabPickup(PickupController pickup, Collider pickupColl)
     {
@@ -23,6 +31,11 @@ public class DumpPickupAction : PickupActionAbstract
             if (pickup.PickupName != PickupsEnum.Keg && pickup.PickupName != PickupsEnum.Garbage)
             {
                 MoneyManager.Instance.TrySubtractResource(SubtractMoney, out _);
+            }
+
+            if (pickup.PickupName == PickupsEnum.Garbage)
+            {
+                reputationManager.AddResource(ReputationForGarbage);
             }
 
             StartCoroutine(DestroyPickup(pickup, sequence));
