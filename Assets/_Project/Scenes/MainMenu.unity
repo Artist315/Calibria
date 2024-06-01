@@ -4308,9 +4308,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135655811768299214, guid: b524ddca9db876b4fbbdf4c6b31d34e7, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135655811768299214, guid: b524ddca9db876b4fbbdf4c6b31d34e7, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 91abd65777b965241b77d750ec43e80b, type: 3}
+    - target: {fileID: 8135655811768299214, guid: b524ddca9db876b4fbbdf4c6b31d34e7, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
