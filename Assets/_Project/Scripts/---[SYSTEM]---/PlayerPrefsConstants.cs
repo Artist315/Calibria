@@ -10,5 +10,5 @@ public static class PlayerPrefsConstants
     public const string GameVolume = "GameVolume";
     public const string GameStarted = "GameStarted";
     public const string TutorialComplete = "TutorialComplete";
-    public const string NewGame = "NewGame";
+    public const string IntroComicsEnded = "IntroComicsEnded";
 }

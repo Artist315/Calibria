@@ -22,7 +22,7 @@ public class IntroComicsUI : MonoBehaviour, IComicsUI
         }
         else
         {
-            PlayerPrefs.SetInt(PlayerPrefsConstants.NewGame, 1);
+            PlayerPrefs.SetInt(PlayerPrefsConstants.IntroComicsEnded, 1);
             Time.timeScale = 1;
             
             _pausePanel.SetCanPause(true);
@@ -33,7 +33,7 @@ public class IntroComicsUI : MonoBehaviour, IComicsUI
     
     void Start()
     {
-        if (PlayerPrefs.GetInt(PlayerPrefsConstants.NewGame, 0) == 1)
+        if (PlayerPrefs.GetInt(PlayerPrefsConstants.IntroComicsEnded, 0) == 1)
         {
             EventsManager.OnGameStarted?.Invoke();
             gameObject.SetActive(false);

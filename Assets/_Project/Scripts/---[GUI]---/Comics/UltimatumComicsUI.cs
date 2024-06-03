@@ -23,7 +23,7 @@ public class UltimatumComicsUI : MonoBehaviour, IComicsUI
         }
         else
         {
-            PlayerPrefs.SetInt(PlayerPrefsConstants.NewGame, 1);
+            //PlayerPrefs.SetInt(PlayerPrefsConstants.NewGame, 1);
             this.gameObject.SetActive(false);
 
             EventsManager.OnGameContinued?.Invoke();
