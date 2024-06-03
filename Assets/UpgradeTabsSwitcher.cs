@@ -31,4 +31,10 @@ public class UpgradeTabsSwitcher : MonoBehaviour
         EventsManager.OnUpgradeOpened += Open;
         EventsManager.OnUpgradeClosed -= Close;
     }
+
+    private void OnDestroy()
+    {
+        EventsManager.OnUpgradeOpened -= Open;
+        EventsManager.OnUpgradeClosed -= Close;
+    }
 }

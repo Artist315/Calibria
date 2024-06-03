@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -8,7 +9,11 @@ public class PausePanelFunctions : MonoBehaviour
     [SerializeField] private GameObject _settingsPanel;
     [SerializeField] private GameObject _pauseMenuVideo;
 
+    [SerializeField]
+    private List<GameObject> objectsToHide = new List<GameObject>();
+
     private bool _canPause = true;
+    private List<GameObject> objectsToShow = new();
 
     private void Update()
     {
@@ -27,6 +32,16 @@ public class PausePanelFunctions : MonoBehaviour
         Time.timeScale = 0f;
         _pauseMenuVideo.SetActive(true);
         _pauseMenuVideo.GetComponent<VideoPlayer>().Play();
+
+        objectsToShow.Clear();
+        objectsToHide.ForEach(x =>
+        {
+            if (x.activeSelf)
+            {
+                objectsToShow.Add(x);
+                x.SetActive(false);
+            }
+        });
     }
 
     public void ClosePausePanel()
@@ -35,6 +50,8 @@ public class PausePanelFunctions : MonoBehaviour
         _pausePanel.SetActive(false);
         _pauseMenuVideo.GetComponent<VideoPlayer>().Stop();
         _pauseMenuVideo.SetActive(false);
+
+        objectsToShow.ForEach(x => x.SetActive(true));
     }
 
     public void LoadMainMenu()
