@@ -50,7 +50,14 @@ public class UpgradePage : MonoBehaviour
         {
             Upgrades.ForEach(x =>
             {
-                x.gameObject.SetActive(true);
+                if (!x.IsUpgraded)
+                {
+                    x.gameObject.SetActive(true);
+                }
+                else
+                {
+                    x.gameObject.SetActive(false);
+                }    
             });
         }
         else
@@ -63,6 +70,7 @@ public class UpgradePage : MonoBehaviour
     {
         if (Upgrades.All(x => x.IsUpgraded))
         {
+            Debug.Log("All was upgraded");
             Upgrades.ForEach(x =>
             {
                 x.gameObject.SetActive(false);

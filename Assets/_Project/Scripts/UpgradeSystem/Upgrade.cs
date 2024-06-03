@@ -54,9 +54,8 @@ public class Upgrade : MonoBehaviour
         Button.onClick.AddListener(BuyCustomization);
 
     }
-    private void Start()
-    {
-    }
+
+
 
 
     private void UpdateText()
@@ -76,23 +75,28 @@ public class Upgrade : MonoBehaviour
     private void UpdateButton()
     {
         IsUpgraded = PlayerPrefs.GetInt(CustomizationUpgradeSettings.ObjectName, 0) == 1;
+        if (IsUpgraded)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
         var isEnoughResources  = MoneyManager.Resource     >= CustomizationUpgradeSettings.MoneyCost;
         var isLevelrequirement = LevelManager.CurrentLevel >= CustomizationUpgradeSettings.LevelRequirement;
+
         CanBeUpgraded = !IsUpgraded && isEnoughResources && isLevelrequirement;
         Button.interactable = CanBeUpgraded;
-        //Debug.Log($"{CustomizationUpgradeSettings.ObjectName} is{!IsUpgraded && isEnoughResources && isLevelrequirement} ");
     }
 
     private void BuyCustomization()
     {
-        PlayerPrefs.SetInt(CustomizationUpgradeSettings.ObjectName, 1);
         if (
         MoneyManager.TrySubtractResource(CustomizationUpgradeSettings.MoneyCost, out int _))
         {
+            PlayerPrefs.SetInt(CustomizationUpgradeSettings.ObjectName, 1);
             Unsubscribe();
-            upgradePage.CheckIfAllUpgraded();
             UpdateButton();
             ActivateObject();
+            upgradePage.CheckIfAllUpgraded();
         }
     }
 
