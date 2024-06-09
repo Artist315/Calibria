@@ -80,4 +80,10 @@ public class UpgradePage : MonoBehaviour
             //EventsManager.OnCustomizationUpgraded -= CheckIfAllUpgraded;
         }
     }
+
+    private void OnDestroy()
+    {
+        EventsManager.OnUpgradeClosed -= HideElements;
+
+    }
 }
