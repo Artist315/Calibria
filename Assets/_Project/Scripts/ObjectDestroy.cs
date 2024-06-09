@@ -43,4 +43,9 @@ public class ObjectDestroy : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void Destroy()
+    {
+        _anim.SetTrigger(_animIDClose);
+    }
 }
