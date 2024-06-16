@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class UpgradeTabsSwitcher : MonoBehaviour
 {
-    public List<GameObject> Tabs;
     public Button FirstTab;
 
     private List<Button> TabSelectors;
