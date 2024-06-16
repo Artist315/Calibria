@@ -13,6 +13,16 @@ public class UpgradeButton : MonoBehaviour
     private MoneyManager moneyManager;
     private LevelManager levelManager;
 
+    public bool IsAvaliable {  get; private set; }
+
+    public bool IsAnythingUpgraded
+    {
+        get
+        {
+            return upgradePages?.Any(x => x.Upgrades.Any(upgrade => upgrade.IsUpgraded)) ?? false;
+        }
+    }
+
     private void Awake()
     {
         _anim = GetComponent<Animator>();
@@ -31,7 +41,7 @@ public class UpgradeButton : MonoBehaviour
     private void UpdateButton()
     {
 
-        var isAvaliable = upgradePages?.Any(x => x.Upgrades?.Any(upgrade =>
+        IsAvaliable = upgradePages?.Any(x => x.Upgrades?.Any(upgrade =>
         {
             var IsUpgraded = PlayerPrefs.GetInt(upgrade.CustomizationUpgradeSettings.ObjectName, 0) == 1;
             var isEnoughResources = moneyManager.Resource >= upgrade.CustomizationUpgradeSettings.MoneyCost;
@@ -39,11 +49,10 @@ public class UpgradeButton : MonoBehaviour
 
             var isAvaliable = !IsUpgraded && isEnoughResources && isLevelrequirement;
             return isAvaliable;
-            }) ?? false) ?? false;
+        }) ?? false) ?? false;
 
-        Debug.Log(isAvaliable);
 
-        if (isAvaliable)
+        if (IsAvaliable)
         {
             _anim.SetBool(_animIDUpgradeAvailable, true);
         }

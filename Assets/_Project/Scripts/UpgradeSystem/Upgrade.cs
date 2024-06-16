@@ -118,4 +118,9 @@ public class Upgrade : MonoBehaviour
             objectModel.SetActive(false);
         }
     }
+
+    private void OnDestroy()
+    {
+        Unsubscribe();
+    }
 }

@@ -2,13 +2,29 @@
 
 public abstract class BaseResourceManager : MonoBehaviour
 {
-    
-    public int Resource {  get; internal set; }
+    private int resource;
+
+    public int Resource {
+        get
+        {
+            if (!_isLoaded)
+            {
+                LoadResource();
+            }
+            return resource;
+        }
+        internal set => resource = value; 
+    }
     public abstract string Name { get; }
+
+    private bool _isLoaded = false;
     
     internal virtual void Awake()
     {
-        LoadResource();
+        if (!_isLoaded)
+        {
+            LoadResource();
+        }
     }
 
     internal void SaveResource()
@@ -20,6 +36,7 @@ public abstract class BaseResourceManager : MonoBehaviour
     private void LoadResource()
     {
         Resource = PlayerPrefs.GetInt(Name, 0);
+        _isLoaded = true;
     }
     
     public virtual bool TrySubtractResource(int subtractAmount, out int resource)

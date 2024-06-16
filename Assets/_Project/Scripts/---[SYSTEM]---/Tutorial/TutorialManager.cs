@@ -10,7 +10,7 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private Upgrade kitchenUpgrade;
     [SerializeField] private Upgrade vIPUpgrade;
 
-    [Header("Beginning Tutorial")]
+    [Header("Initial tutorial")]
     [SerializeField] private PlayableDirector _kegSpawnerScene;
     [SerializeField] private PlayableDirector _kegeratorScene;
     [SerializeField] private PlayableDirector _beerScene;
@@ -19,11 +19,17 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private PlayableDirector _sinkScene;
     [SerializeField] private PlayableDirector _finalTutorialScene;
 
-    [Header("Beginning Tutorial")]
+    [Header("Initial tutorial objects to destroy")]
     [SerializeField]
     private GameObject _onBeerTutorialDestroy;
+    [Header("Upgrade tutorial objects")]
 
     [SerializeField] private ClientPickupAction _beginningTutorialClient;
+
+    [Header("First upgrade Tutorial")]
+    [SerializeField] private UpgradeButton      _upgradeButton;
+    [SerializeField] private PlayableDirector   _firstUpgradeTutorial;
+    [SerializeField] private GameObject         _upgradeArrow;
 
     [Header("Upgrades Tutorial")]
     [SerializeField] private PlayableDirector   _pastaScene;
@@ -61,6 +67,7 @@ public class TutorialManager : MonoBehaviour
 
         StartCoroutine(StartPastaScene());
         StartCoroutine(StartWhiskeyScene());
+        StartCoroutine(StartUpgradeTutorial());
     }
 
     #region Beginning Tutorial
@@ -137,6 +144,32 @@ public class TutorialManager : MonoBehaviour
     #endregion
 
     #region Upgrades Tutorial
+
+    private IEnumerator StartUpgradeTutorial()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        if (_upgradeButton == null)
+        {
+            Debug.LogWarning($"Update button not assigned");            
+        }
+        else if (!_upgradeButton.IsAnythingUpgraded)
+        {
+            yield return new WaitUntil(() => _upgradeButton.IsAvaliable);
+            StartCoroutine(PlayTimeline(_firstUpgradeTutorial));
+
+            EventsManager.OnUpgradesViewOpen += DestroyArrow;
+        }
+
+        void DestroyArrow()
+        {
+            EventsManager.OnUpgradesViewOpen -= DestroyArrow;
+            if (_upgradeArrow != null && _upgradeArrow.TryGetComponent<ObjectDestroy>(out var objectDestroy))
+            {
+                objectDestroy.Destroy();
+            }
+        }
+    }
     private IEnumerator StartPastaScene()
     {
         yield return new WaitForSeconds(0.1f);

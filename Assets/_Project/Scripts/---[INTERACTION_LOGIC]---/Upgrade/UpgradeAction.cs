@@ -45,6 +45,7 @@ public class UpgradeAction : MonoBehaviour
                 PlayerInTrigger = true;
                 _triggerStayTimer = 0;
 
+                EventsManager.OnUpgradesViewOpen?.Invoke();
                 _upgradeUI.Open();
             }
         }

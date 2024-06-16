@@ -11,7 +11,7 @@ public class UpgradePage : MonoBehaviour
 
     private void Awake()
     {
-        Upgrades = GetComponentsInChildren<Upgrade>().ToList();
+        Upgrades = GetComponentsInChildren<Upgrade>(true).ToList();
     }
 
     private void Start()

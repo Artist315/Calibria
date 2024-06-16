@@ -25,4 +25,5 @@ public class EventsManager : MonoBehaviour
     public static UIEvent OnUpgradeOpened;
     public static UIEvent OnUpgradeClosed;
     public static UIEvent OnCustomizationUpgraded;
+    public static UIEvent OnUpgradesViewOpen;
 }
