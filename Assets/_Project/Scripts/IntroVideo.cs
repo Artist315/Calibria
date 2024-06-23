@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class IntroVideo : MonoBehaviour
@@ -9,30 +10,20 @@ public class IntroVideo : MonoBehaviour
     [SerializeField]
     private VideoPlayer videoPlayer;
 
-    [SerializeField]
-    private List<GameObject> objectsToActive = new List<GameObject>();
-    // Start is called before the first frame update
     void Awake()
-    {
-        foreach (var objectToActive in objectsToActive)
-        {
-            objectToActive.SetActive(false);
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
     {
         videoPlayer.loopPointReached += EndReached;
     }
 
+
     private void EndReached(VideoPlayer source)
     {
-        foreach (var objectToActive in objectsToActive)
-        {
-            objectToActive.SetActive(true);
-            videoPlayer.gameObject.SetActive(false);
-        }
+        LoadLevelAsync(SceneIndexConstants.MainMenu);
+    }
+
+    private void LoadLevelAsync(int sceneIndex)
+    {
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneIndex);
     }
 
     //private IEnumerator IntroVideo()
