@@ -8,7 +8,6 @@ public class EventsManager : MonoBehaviour
 
     public delegate void GameStateEvent();
     public delegate void UIEvent();
-    public delegate bool CoursorEvent();
     private void Awake()
     {
         //OnGameStarted   = new UnityEvent();
