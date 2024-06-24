@@ -118,13 +118,13 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 1086224854611579205}
-    m_Duration: 1
+    m_Duration: 1.1666666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: -4668296460893839323}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: 1
+    m_BlendOutDuration: 1.1666666666666667
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -174,8 +174,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: -4668296460893839323}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 1
-    m_BlendOutDuration: 1
+    m_BlendInDuration: 1.1666666666666667
+    m_BlendOutDuration: 1.1666666666666665
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -199,15 +199,15 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Tutorial_1_Keg
   - m_Version: 1
-    m_Start: 2.5
+    m_Start: 2.3333333333333335
     m_ClipIn: 0
     m_Asset: {fileID: 8337862720699017828}
-    m_Duration: 1
+    m_Duration: 1.1666666666666665
     m_TimeScale: 1
     m_ParentTrack: {fileID: -4668296460893839323}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 1
+    m_BlendInDuration: 1.1666666666666665
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
