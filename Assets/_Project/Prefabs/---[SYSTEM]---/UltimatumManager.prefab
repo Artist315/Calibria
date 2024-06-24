@@ -49,8 +49,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14be44a37f8793f4fb1ab27984e7a24a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UltimatumTimer: 200
-  MoneyGoal: 250
+  UltimatumTimer: 205
+  MoneyGoal: 245
   MoneyCollected: 0
   Timer: 0
   _ultimatumComics: {fileID: 0}
