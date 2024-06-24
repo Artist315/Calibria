@@ -19457,7 +19457,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528991622}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44721362, y: -0.000000015389857, z: 0.000000007694929, w: 0.89442724}
+  m_LocalRotation: {x: 0.44721362, y: 0.000000015389855, z: -0.000000007694927, w: 0.89442724}
   m_LocalPosition: {x: 0.53704834, y: 20.002703, z: 3.6271076}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -71051,10 +71051,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1303003319}
     - target: {fileID: 5383121180886912080, guid: bf30f8c2287686640b564816134a70e2, type: 3}
-      propertyPath: MoneyGoal
-      value: 245
-      objectReference: {fileID: 0}
-    - target: {fileID: 5383121180886912080, guid: bf30f8c2287686640b564816134a70e2, type: 3}
       propertyPath: _finalComics
       value: 
       objectReference: {fileID: 1643152215}
@@ -71066,10 +71062,6 @@ PrefabInstance:
       propertyPath: _upgradeArea
       value: 
       objectReference: {fileID: 1348448873}
-    - target: {fileID: 5383121180886912080, guid: bf30f8c2287686640b564816134a70e2, type: 3}
-      propertyPath: UltimatumTimer
-      value: 205
-      objectReference: {fileID: 0}
     - target: {fileID: 5383121180886912080, guid: bf30f8c2287686640b564816134a70e2, type: 3}
       propertyPath: _ultimatumComics
       value: 
