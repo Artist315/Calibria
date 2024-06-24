@@ -81,6 +81,7 @@ public class UpgradeUI : MonoBehaviour
     {
         Debug.Log("Upgrade Ui closed");
 
+        CursorScript.HideCoursor();
         UpgradeView.Priority = -1;
         //_anim.SetTrigger(_animIDFadeOut);
         EventsManager.OnUpgradeClosed?.Invoke();
@@ -91,6 +92,7 @@ public class UpgradeUI : MonoBehaviour
     {
         Debug.Log("Upgrade Ui opened");
 
+        CursorScript.ShowCoursor();
         UpgradeView.Priority = 1;
         StartCoroutine(WaitCameraBlend());
     }

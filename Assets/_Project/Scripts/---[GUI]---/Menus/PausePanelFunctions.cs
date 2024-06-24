@@ -28,6 +28,7 @@ public class PausePanelFunctions : MonoBehaviour
     
     public void OpenPausePanel()
     {
+        CursorScript.ShowCoursor();
         _pausePanel.SetActive(true);
         Time.timeScale = 0f;
         _pauseMenuVideo.SetActive(true);
@@ -46,6 +47,7 @@ public class PausePanelFunctions : MonoBehaviour
 
     public void ClosePausePanel()
     {
+        CursorScript.HideCoursor();
         Time.timeScale = 1f;
         _pausePanel.SetActive(false);
         _pauseMenuVideo.GetComponent<VideoPlayer>().Stop();
