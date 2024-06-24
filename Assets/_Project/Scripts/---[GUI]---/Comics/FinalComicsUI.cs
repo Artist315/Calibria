@@ -27,8 +27,11 @@ public class FinalComicsUI : MonoBehaviour, IComicsUI
         {
             int fullscreenSetting = PlayerPrefs.GetInt(PlayerPrefsConstants.InFullscreen);
             int soundSetting = PlayerPrefs.GetInt(PlayerPrefsConstants.GameVolume);
-            
-            PlayerPrefs.DeleteAll();
+
+            if (IsGoodFinal)
+            {
+                PlayerPrefs.DeleteAll();
+            }
 
             PlayerPrefs.SetInt(PlayerPrefsConstants.InFullscreen, fullscreenSetting);
             PlayerPrefs.SetInt(PlayerPrefsConstants.GameVolume, soundSetting);

@@ -25,11 +25,4 @@ public class IntroVideo : MonoBehaviour
     {
         AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneIndex);
     }
-
-    //private IEnumerator IntroVideo()
-    //{
-    //    yield return new WaitUntil(() => videoClip.is.Pickup != null);
-    //    yield return new WaitUntil(() => _whiskeyTutorialClient.Pickup.PickupName == PickupsEnum.Whiskey);
-    //    _whiskeyClientArrow.SetTrigger(_animIDClose);
-    //}
 }
