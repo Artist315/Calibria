@@ -43,7 +43,8 @@ public class UltimatumManager : MonoBehaviour
         {
             _playerConfirmationUI.SetActive(true);
             _bossArrow.SetActive(false);
-            
+            CursorScript.ShowCoursor();
+
             Time.timeScale = 0;
         }
         else if (_ultimatumIsFinished && other.CompareTag(TagConstants.Player))
