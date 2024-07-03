@@ -29,6 +29,16 @@ public class UpgradeAction : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        EventsManager.OnGamePaused += CloseUI;
+    }
+    private void CloseUI()
+    {
+        Debug.Log("Upgrade Ui close action called");
+        CloseUpgradeUI(false);
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (_isClosedForCutscene) return;
@@ -39,16 +49,24 @@ public class UpgradeAction : MonoBehaviour
             
             if (_triggerStayTimer >= _actionDelay && !PlayerInTrigger)
             {
-                Debug.Log("Upgrade Ui open action called");
-                _isUpgradeOpened = true;
-                _audioManager.PlayAudio(_openAudioClip);
-                PlayerInTrigger = true;
-                _triggerStayTimer = 0;
+                OpenUpgradeUI();
 
-                EventsManager.OnUpgradesViewOpen?.Invoke();
-                _upgradeUI.Open();
             }
         }
+    }
+
+    private void OpenUpgradeUI()
+    {
+        Debug.Log("Upgrade Ui open action called");
+        _isUpgradeOpened = true;
+        _audioManager.PlayAudio(_openAudioClip);
+        PlayerInTrigger = true;
+        _triggerStayTimer = 0;
+
+        EventsManager.OnUpgradesViewOpen?.Invoke();
+
+        PausePanelFunctions.SetCanPause(false);
+        _upgradeUI.Open();
     }
 
     private void OnTriggerExit(Collider other)
@@ -78,7 +96,13 @@ public class UpgradeAction : MonoBehaviour
         PlayerInTrigger = false;
         
         _isClosedForCutscene = flag;
+
+        PausePanelFunctions.SetCanPause(true);
     }
 
+    private void OnDestroy()
+    {
+        EventsManager.OnGamePaused -= CloseUI;
+    }
 
 }

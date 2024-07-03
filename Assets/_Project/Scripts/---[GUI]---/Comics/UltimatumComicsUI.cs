@@ -27,7 +27,7 @@ public class UltimatumComicsUI : MonoBehaviour, IComicsUI
             this.gameObject.SetActive(false);
 
             EventsManager.OnGameContinued?.Invoke();
-            _pausePanel.SetCanPause(true);
+            PausePanelFunctions.SetCanPause(true);
             Time.timeScale = 1;
         }
     }
@@ -41,7 +41,7 @@ public class UltimatumComicsUI : MonoBehaviour, IComicsUI
     {
         EventsManager.OnGamePaused?.Invoke();
 
-        _pausePanel.SetCanPause(false);
+        PausePanelFunctions.SetCanPause(false);
         
         Time.timeScale = 0;
         active = true;

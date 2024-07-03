@@ -48,7 +48,7 @@ public class FinalComicsUI : MonoBehaviour, IComicsUI
     public void Activate()
     {
         EventsManager.OnGamePaused?.Invoke();
-        _pausePanel.SetCanPause(false);
+        PausePanelFunctions.SetCanPause(false);
         
         Time.timeScale = 0;
         if (IsGoodFinal)

@@ -24,8 +24,8 @@ public class IntroComicsUI : MonoBehaviour, IComicsUI
         {
             PlayerPrefs.SetInt(PlayerPrefsConstants.IntroComicsEnded, 1);
             Time.timeScale = 1;
-            
-            _pausePanel.SetCanPause(true);
+
+            PausePanelFunctions.SetCanPause(true);
             this.gameObject.SetActive(false);
             EventsManager.OnGameStarted?.Invoke();
         }
@@ -42,7 +42,7 @@ public class IntroComicsUI : MonoBehaviour, IComicsUI
         {
             Time.timeScale = 0;
 
-            _pausePanel.SetCanPause(false);
+            PausePanelFunctions.SetCanPause(false);
 
             currentPage = Pages[currentPageNumber];
             currentPage.gameObject.SetActive(true);
